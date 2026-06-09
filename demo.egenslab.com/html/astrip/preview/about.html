@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:33:45 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Rasset Adventures | Kenya Safari and Tour Experts</title>
+    
+    <link rel="icon" href="assets/images/icons/rasset-logo.jpg" type="image/gif" sizes="20x20">
+
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- css file link -->
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- box-icon -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+
+    <!-- jquery ui -->
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+
+    <!-- swiper-slide -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+
+    <!-- nice-select -->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+
+    <!-- Select2 css -->
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+
+    <!-- animate css -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+    <!-- odometer css -->
+    <link rel="stylesheet" href="assets/css/odometer.css">
+
+    <!-- video player -->
+    <link href="../../../../vjs.zencdn.net/7.20.2/video-js.css" rel="stylesheet" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+    /* About page: uniform section spacing */
+    .about-heading-section,
+    .our-story-section,
+    .why-choose-section,
+    .mission-vision-section,
+    .responsible-section,
+    .two-image-section,
+    .guide-section,
+    .testimonial-section,
+    .facilities-section2 {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+    }
+
+    /* Extra spacing specifically before 'What We Offer' */
+    .offer-section {
+        padding-top: 120px !important;
+        padding-bottom: 80px !important;
+    }
+
+    details.tour-guide-single {
+        display: block;
+        border-radius: 0px;
+        overflow: hidden;
+        box-shadow: 4px 3px 40px rgba(16,33,34,.06);
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 470px;
+    }
+
+    details.tour-guide-single summary {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    details.tour-guide-single summary::-webkit-details-marker {
+        display: none;
+    }
+
+    details.tour-guide-single summary .guide-image {
+        overflow: hidden;
+        position: relative;
+    }
+
+    details.tour-guide-single summary .guide-image img {
+        transition: all .65s ease;
+        width: 100%;
+    }
+
+    details.tour-guide-single summary .guide-image .social-area {
+        background-color: rgba(9,16,13,.6);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .65s ease;
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    details.tour-guide-single summary:hover .guide-image img {
+        transform: scale(1.1);
+    }
+
+    details.tour-guide-single summary:hover .guide-image .social-area {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    details.tour-guide-single summary .guide-contnent {
+        padding: 20px 20px 25px 20px;
+        text-align: center;
+        position: relative;
+    }
+
+    details.tour-guide-single summary::after {
+        content: '+';
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2.4rem;
+        color: var(--primary-color3);
+        font-weight: 700;
+        transition: transform .35s ease, color .35s ease;
+    }
+
+    details.tour-guide-single[open] summary::after {
+        content: '-';
+        transform: translateY(2px);
+    }
+
+    details.tour-guide-single .guide-details {
+        padding: 0 20px 25px 20px;
+        background: #fff;
+        color: var(--text-secondary);
+        font-size: 16px;
+        line-height: 1.7;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: max-height .45s ease, opacity .45s ease;
+    }
+
+    details.tour-guide-single[open] .guide-details {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    details.tour-guide-single .guide-details p {
+        margin-bottom: 0;
+    }
+
+    details.tour-guide-single summary .guide-contnent h4 {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: var(--text-primary);
+        font-family: var(--font-merriw);
+        margin-bottom: 8px;
+    }
+
+    details.tour-guide-single summary .guide-contnent p {
+        font-size: 17px;
+        font-weight: 500;
+        color: var(--text-secondary);
+        font-family: var(--font-work-sans);
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 991px) {
+        .about-heading-section,
+        .our-story-section,
+        .why-choose-section,
+        .mission-vision-section,
+        .responsible-section,
+        .two-image-section,
+        .guide-section,
+        .testimonial-section,
+        .facilities-section2 {
+            padding-top: 60px !important;
+            padding-bottom: 60px !important;
+        }
+        .offer-section {
+            padding-top: 80px !important;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <!-- preloader -->
+    <div class="home1preloader">
+        <div class="egns-preloader">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6">
+                        <div class="circle-border">
+                            <div class="moving-circle"></div>
+                            <div class="moving-circle"></div>
+                            <div class="moving-circle"></div>
+                            <svg width="180px" height="150px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet"
+                                style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);">
+                                <path stroke="#D90A2C" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+                                <path id="outline-bg" opacity="0.05" fill="none" stroke="#959595" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- scroll top -->
+    <div class="circle-container">
+        <svg class="circle-progress svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
+    </div>
+
+    
+   
+
+    <!-- ========== header============= -->
+
+    <header class="header-area style-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="main-nav">
+                <div class="mobile-logo-area d-lg-none d-flex justify-content-between align-items-center">
+                    <div class="mobile-logo-wrap ">
+                        <a href="index.html"><img alt="image" src="assets/images/icons/rasset-logo.jpg"></a>
+                    </div>
+                    <div class="menu-close-btn">
+                        <i class="bi bi-x-lg text-dark"></i>
+                    </div>
+                </div>
+                                        <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="tour-package.html">Tours</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog-grid.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <!-- mobile-search-area -->
+                
+                <div class="phone-call sibling2 d-flex justify-content-start align-items-center flex-row d-lg-none d-block mt-5">
+                    <div class="icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.4525 22.3006C27.7155 21.5332 26.8265 21.1229 25.8844 21.1229C24.9498 21.1229 24.0532 21.5256 23.2858 22.293L20.8848 24.6864C20.6873 24.58 20.4898 24.4813 20.2998 24.3825C20.0263 24.2457 19.7679 24.1166 19.5476 23.9798C17.2986 22.5514 15.2547 20.6898 13.2944 18.2813C12.3446 17.0808 11.7064 16.0702 11.2429 15.0445C11.866 14.4746 12.4434 13.882 13.0057 13.3121C13.2184 13.0994 13.4312 12.879 13.6439 12.6663C15.2395 11.0707 15.2395 9.00404 13.6439 7.40845L11.5696 5.33419C11.3341 5.09865 11.091 4.85551 10.863 4.61237C10.4071 4.14129 9.92847 3.65502 9.4346 3.19913C8.69759 2.46972 7.81621 2.08222 6.88925 2.08222C5.96229 2.08222 5.06572 2.46972 4.30592 3.19913C4.29832 3.20673 4.29832 3.20673 4.29072 3.21433L1.70738 5.82046C0.734835 6.79301 0.180177 7.97831 0.0586086 9.35355C-0.123745 11.5722 0.529687 13.6389 1.03116 14.9913C2.26204 18.3116 4.10077 21.3889 6.84366 24.6864C10.1716 28.6602 14.1758 31.7982 18.7498 34.0092C20.4974 34.8374 22.83 35.8176 25.4361 35.9847C25.5956 35.9923 25.7628 35.9999 25.9148 35.9999C27.6699 35.9999 29.1439 35.3693 30.2988 34.1156C30.3064 34.1004 30.3216 34.0928 30.3292 34.0776C30.7243 33.5989 31.1802 33.1658 31.6589 32.7024C31.9856 32.3908 32.3199 32.0641 32.6466 31.7222C33.3988 30.9396 33.7939 30.0278 33.7939 29.0933C33.7939 28.1511 33.3912 27.247 32.6238 26.4871L28.4525 22.3006ZM31.1726 30.3014C31.165 30.3014 31.165 30.309 31.1726 30.3014C30.8763 30.6205 30.5724 30.9092 30.2456 31.2283C29.7518 31.6994 29.2503 32.1933 28.7792 32.7479C28.0118 33.5685 27.1077 33.956 25.9224 33.956C25.8084 33.956 25.6868 33.956 25.5728 33.9484C23.3162 33.8041 21.2192 32.9227 19.6464 32.1705C15.3459 30.0886 11.5696 27.133 8.43165 23.3871C5.84072 20.2643 4.10837 17.3771 2.96106 14.2771C2.25444 12.3852 1.99611 10.9112 2.11008 9.52071C2.18606 8.63174 2.52797 7.89473 3.15861 7.26409L5.74954 4.67316C6.12185 4.32365 6.51695 4.13369 6.90445 4.13369C7.38312 4.13369 7.77063 4.42242 8.01376 4.66556C8.02136 4.67316 8.02896 4.68075 8.03656 4.68835C8.50004 5.12144 8.94072 5.56973 9.4042 6.0484C9.63974 6.29154 9.88288 6.53468 10.126 6.78541L12.2003 8.85968C13.0057 9.66507 13.0057 10.4097 12.2003 11.2151C11.9799 11.4354 11.7672 11.6558 11.5469 11.8685C10.9086 12.5219 10.3008 13.1298 9.63974 13.7224C9.62455 13.7376 9.60935 13.7452 9.60175 13.7604C8.94832 14.4139 9.06989 15.0521 9.20666 15.4852C9.21425 15.508 9.22185 15.5308 9.22945 15.5536C9.76891 16.8604 10.5287 18.0913 11.6836 19.5577L11.6912 19.5653C13.7883 22.1487 15.9993 24.1621 18.4383 25.7045C18.7498 25.9021 19.0689 26.0617 19.3728 26.2136C19.6464 26.3504 19.9047 26.4795 20.125 26.6163C20.1554 26.6315 20.1858 26.6543 20.2162 26.6695C20.4746 26.7987 20.7177 26.8595 20.9684 26.8595C21.5991 26.8595 21.9942 26.4644 22.1233 26.3352L24.7219 23.7367C24.9802 23.4783 25.3905 23.1668 25.8692 23.1668C26.3402 23.1668 26.7277 23.4631 26.9633 23.7215C26.9709 23.7291 26.9709 23.7291 26.9785 23.7367L31.165 27.9232C31.9476 28.6982 31.9476 29.496 31.1726 30.3014Z"/>
+                            <path d="M19.4556 8.56378C21.4463 8.8981 23.2547 9.84025 24.6983 11.2839C26.1419 12.7275 27.0765 14.5358 27.4184 16.5265C27.502 17.028 27.9351 17.3775 28.4289 17.3775C28.4897 17.3775 28.5429 17.3699 28.6037 17.3623C29.1659 17.2711 29.5382 16.7393 29.4471 16.177C29.0368 13.7684 27.8971 11.5726 26.1571 9.83266C24.4172 8.0927 22.2213 6.953 19.8127 6.5427C19.2505 6.45152 18.7262 6.82383 18.6275 7.37849C18.5287 7.93314 18.8934 8.47261 19.4556 8.56378Z"/>
+                            <path d="M35.9595 15.8804C35.2832 11.9142 33.4141 8.30511 30.5421 5.43304C27.67 2.56098 24.0609 0.691864 20.0947 0.0156379C19.5401 -0.0831367 19.0158 0.296766 18.917 0.851423C18.8259 1.41368 19.1982 1.93794 19.7604 2.03672C23.3011 2.63696 26.5303 4.31613 29.0984 6.87667C31.6666 9.44481 33.3381 12.674 33.9384 16.2147C34.022 16.7161 34.455 17.0657 34.9489 17.0657C35.0097 17.0657 35.0629 17.0581 35.1237 17.0505C35.6783 16.9669 36.0582 16.435 35.9595 15.8804Z"/>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        <span>Call Now</span>
+                        <h5><a href="tel:+254714098121">+254714098121</a></h5>
+                    </div>
+                </div>
+                <a href="contact.html" class="eg-btn btn--primary btn--lg d-lg-none d-flex mt-5">Book A Trip</a>
+            </div>
+    
+            <div class="nav-right d-flex jsutify-content-end align-items-center gap-5">
+                <div class="phone-call sibling2 justify-content-start align-items-center flex-row d-xl-flex d-none">
+                    <div class="icon">
+                        <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M28.4525 22.3006C27.7155 21.5332 26.8265 21.1229 25.8844 21.1229C24.9498 21.1229 24.0532 21.5256 23.2858 22.293L20.8848 24.6864C20.6873 24.58 20.4898 24.4813 20.2998 24.3825C20.0263 24.2457 19.7679 24.1166 19.5476 23.9798C17.2986 22.5514 15.2547 20.6898 13.2944 18.2813C12.3446 17.0808 11.7064 16.0702 11.2429 15.0445C11.866 14.4746 12.4434 13.882 13.0057 13.3121C13.2184 13.0994 13.4312 12.879 13.6439 12.6663C15.2395 11.0707 15.2395 9.00404 13.6439 7.40845L11.5696 5.33419C11.3341 5.09865 11.091 4.85551 10.863 4.61237C10.4071 4.14129 9.92847 3.65502 9.4346 3.19913C8.69759 2.46972 7.81621 2.08222 6.88925 2.08222C5.96229 2.08222 5.06572 2.46972 4.30592 3.19913C4.29832 3.20673 4.29832 3.20673 4.29072 3.21433L1.70738 5.82046C0.734835 6.79301 0.180177 7.97831 0.0586086 9.35355C-0.123745 11.5722 0.529687 13.6389 1.03116 14.9913C2.26204 18.3116 4.10077 21.3889 6.84366 24.6864C10.1716 28.6602 14.1758 31.7982 18.7498 34.0092C20.4974 34.8374 22.83 35.8176 25.4361 35.9847C25.5956 35.9923 25.7628 35.9999 25.9148 35.9999C27.6699 35.9999 29.1439 35.3693 30.2988 34.1156C30.3064 34.1004 30.3216 34.0928 30.3292 34.0776C30.7243 33.5989 31.1802 33.1658 31.6589 32.7024C31.9856 32.3908 32.3199 32.0641 32.6466 31.7222C33.3988 30.9396 33.7939 30.0278 33.7939 29.0933C33.7939 28.1511 33.3912 27.247 32.6238 26.4871L28.4525 22.3006ZM31.1726 30.3014C31.165 30.3014 31.165 30.309 31.1726 30.3014C30.8763 30.6205 30.5724 30.9092 30.2456 31.2283C29.7518 31.6994 29.2503 32.1933 28.7792 32.7479C28.0118 33.5685 27.1077 33.956 25.9224 33.956C25.8084 33.956 25.6868 33.956 25.5728 33.9484C23.3162 33.8041 21.2192 32.9227 19.6464 32.1705C15.3459 30.0886 11.5696 27.133 8.43165 23.3871C5.84072 20.2643 4.10837 17.3771 2.96106 14.2771C2.25444 12.3852 1.99611 10.9112 2.11008 9.52071C2.18606 8.63174 2.52797 7.89473 3.15861 7.26409L5.74954 4.67316C6.12185 4.32365 6.51695 4.13369 6.90445 4.13369C7.38312 4.13369 7.77063 4.42242 8.01376 4.66556C8.02136 4.67316 8.02896 4.68075 8.03656 4.68835C8.50004 5.12144 8.94072 5.56973 9.4042 6.0484C9.63974 6.29154 9.88288 6.53468 10.126 6.78541L12.2003 8.85968C13.0057 9.66507 13.0057 10.4097 12.2003 11.2151C11.9799 11.4354 11.7672 11.6558 11.5469 11.8685C10.9086 12.5219 10.3008 13.1298 9.63974 13.7224C9.62455 13.7376 9.60935 13.7452 9.60175 13.7604C8.94832 14.4139 9.06989 15.0521 9.20666 15.4852C9.21425 15.508 9.22185 15.5308 9.22945 15.5536C9.76891 16.8604 10.5287 18.0913 11.6836 19.5577L11.6912 19.5653C13.7883 22.1487 15.9993 24.1621 18.4383 25.7045C18.7498 25.9021 19.0689 26.0617 19.3728 26.2136C19.6464 26.3504 19.9047 26.4795 20.125 26.6163C20.1554 26.6315 20.1858 26.6543 20.2162 26.6695C20.4746 26.7987 20.7177 26.8595 20.9684 26.8595C21.5991 26.8595 21.9942 26.4644 22.1233 26.3352L24.7219 23.7367C24.9802 23.4783 25.3905 23.1668 25.8692 23.1668C26.3402 23.1668 26.7277 23.4631 26.9633 23.7215C26.9709 23.7291 26.9709 23.7291 26.9785 23.7367L31.165 27.9232C31.9476 28.6982 31.9476 29.496 31.1726 30.3014Z"/>
+                            <path d="M19.4556 8.56378C21.4463 8.8981 23.2547 9.84025 24.6983 11.2839C26.1419 12.7275 27.0765 14.5358 27.4184 16.5265C27.502 17.028 27.9351 17.3775 28.4289 17.3775C28.4897 17.3775 28.5429 17.3699 28.6037 17.3623C29.1659 17.2711 29.5382 16.7393 29.4471 16.177C29.0368 13.7684 27.8971 11.5726 26.1571 9.83266C24.4172 8.0927 22.2213 6.953 19.8127 6.5427C19.2505 6.45152 18.7262 6.82383 18.6275 7.37849C18.5287 7.93314 18.8934 8.47261 19.4556 8.56378Z"/>
+                            <path d="M35.9595 15.8804C35.2832 11.9142 33.4141 8.30511 30.5421 5.43304C27.67 2.56098 24.0609 0.691864 20.0947 0.0156379C19.5401 -0.0831367 19.0158 0.296766 18.917 0.851423C18.8259 1.41368 19.1982 1.93794 19.7604 2.03672C23.3011 2.63696 26.5303 4.31613 29.0984 6.87667C31.6666 9.44481 33.3381 12.674 33.9384 16.2147C34.022 16.7161 34.455 17.0657 34.9489 17.0657C35.0097 17.0657 35.0629 17.0581 35.1237 17.0505C35.6783 16.9669 36.0582 16.435 35.9595 15.8804Z"/>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        <span>Call Now</span>
+                        <h5><a href="tel:+254714098121">+254714098121</a></h5>
+                    </div>
+                </div>
+                <div class="mobile-menu-btn d-lg-none d-block">
+                    <i class="bi bi-list text-dark"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== header end============= -->
+
+    <!-- ========== inner-banner-section start============= -->
+
+    <div class="inner-banner-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-md-10 col-sm-12">
+                    <div class="breadcrumb-area">
+                        <span>Welcome to Rasset Adventures</span>
+                        <h2>Discover authentic Safaris and unforgettable travel experiences.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============  inner-banner-section end=============== -->
+    
+    <!-- =============== about-heading-section start =============== -->
+    <div class="about-heading-section pt-90 pb-90">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10 col-sm-12 text-center">
+                    <div class="section-title1">
+                        <span>About Us</span>
+                        <h2>Where Luxury Meets Adventure</h2>
+                        <p class="para">Discover the beauty of East Africa with Rasset Adventures — where unforgettable wildlife encounters, breathtaking landscapes, rich cultures, and luxury experiences come together. We create tailor-made safaris and adventures designed to inspire, excite, and leave lasting memories across Kenya, Tanzania, Zanzibar, Uganda, and beyond.</p>
+                        <p class="para"> <strong>RASSET ADVENTURES was founded five years ago by Steve.A , a Kenyan-born travel enthusiast with a deep-rooted passion for exploration, nature, and African landscapes. Growing up surrounded by Kenya’s rich natural beauty, Steve developed an early curiosity for travel through small hiking experiences and outdoor adventures, which gradually grew into a lifelong calling. His passion for discovery led him to pursue formal studies in Wildlife and Tourism Management, where he gained a strong academic foundation in conservation, safari operations, and sustainable tourism practices. While studying, he actively continued exploring East Africa, visiting numerous national parks, cultural sites, and remote destinations across the region.</strong></p>
+                        <p class="para"> <strong>Driven by a desire to truly understand Africa’s diverse landscapes, Steve challenged himself by conquering some of the continent’s most iconic peaks, including Mount Kilimanjaro in Tanzania, Ol Doinyo Lengai in Tanzania, and Mount Kenya in Kenya. These experiences not only strengthened his resilience and leadership but also deepened his appreciation for Africa’s natural heritage. Inspired by these journeys, he envisioned a company that would go beyond ordinary tours — one that would connect travelers to authentic African experiences while promoting conservation, culture, and community engagement. This vision led to the birth of Rasset Adventures.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============== about-heading-section end =============== -->
+
+    <!-- =============== our-story-section start =============== -->
+    <div class="our-story-section pt-120 pb-120">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6">
+                    <div class="story-content">
+                        <h3 class="tour-details-subtitle">Our Story</h3>
+                        <h2>From a passion for wildlife to curated safari journeys</h2>
+                        <p class="para">Rasset Adventures began with a love for East Africa's wild places and a commitment to responsible travel. Founded by <strong>STEVE</strong> 5 years ago, the company started small, guided by local expertise, and grew into a trusted name for travelers seeking authentic safaris, cultural immersion, and personalized service.</p>
+                        <p class="para">Over the years, Rasset Adventures has grown into a trusted travel brand known for personalized service, unforgettable safaris, and immersive cultural experiences. Every itinerary we create is carefully designed to celebrate the beauty of the land, respect local communities, and protect the incredible wildlife that makes East Africa truly extraordinary.</p>
+                        <p class="para">Today, we design every itinerary to honor the land, the people, and the incredible wildlife that make East Africa and the region so special. Our story is rooted in meaningful experiences and a promise to help you explore with confidence and care.</p>
+                        <a href="tour-package.html" class="eg-btn btn--primary btn--lg mt-4">View Our Tours</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="story-image">
+                        <img src="assets/images/bg/rasset-icon-3.png" class="img-fluid" alt="Our Story">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============== our-story-section end =============== -->
+
+    <!-- =============== offer-section start =============== -->
+    <div class="offer-section pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-10 text-center">
+                    <div class="section-title1">
+                        <span>What We Offer</span>
+                        <h2>East Africa journeys tailored to your style, schedule, and budget</h2>
+                        <p class="para">At Rasset Adventures, we specialize in creating unforgettable travel experiences across East Africa, carefully tailored to match every traveler’s style, interests, and budget. From thrilling wildlife encounters to relaxing coastal escapes, we offer journeys designed to inspire adventure, comfort, and authentic connection.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-60">
+                <div class="col-lg-10">
+                    <ul class="feature3-list sibling-2 offer-list">
+                        <li>Luxury & Mid-Range Safaris</li>
+                        <li>Wildlife & Big Five Safaris</li>
+                        <li>Great Wildebeest Migration Safaris</li>
+                        <li>Beach Holidays in Zanzibar & Diani</li>
+                        <li>Mount Kenya & Adventure Trekking</li>
+                        <li>Family & Group Tours</li>
+                        <li>Honeymoon & Romantic Getaways</li>
+                        <li>Cultural & Community Experiences</li>
+                        <li>Weekend Getaways & Day Tours</li>
+                        <li>Tailor-Made East African Adventures</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-60">
+                <div class="col-lg-10">
+                    <p class="para text-center">Whether you seek thrilling game drives across the savannah, peaceful moments by the Indian Ocean, or immersive cultural experiences, our team is dedicated to creating journeys filled with unforgettable memories.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============== offer-section end =============== -->
+
+    <!-- =============== why-choose-section start =============== -->
+    <div class="why-choose-section pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-8 col-xl-10 col-md-10 col-sm-12 text-center">
+                    <div class="section-title1">
+                        <span>Why Choose Us</span>
+                        <h2>Why Choose Rasset Adventures</h2>
+                        <p class="para">At Rasset Adventures, we believe every journey should be seamless, authentic, and unforgettable. With a passion for excellence and deep local knowledge, we go beyond ordinary travel to create personalized safari experiences that truly capture the spirit of Africa.</p>
+                        <img src="assets/images/icons/section-title-vector.svg" alt="image">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-60">
+                <div class="col-lg-10">
+                    <h4 class="text-center mb-40">Why travelers choose us:</h4>
+                    <ul class="feature3-list sibling-2 offer-list">
+                        <li>Expert Local Guides with extensive safari experience</li>
+                        <li>Tailor-Made Itineraries designed around your travel style</li>
+                        <li>Luxury, Mid-Range & Budget-Friendly Options</li>
+                        <li>Exceptional Customer Service and Personalized Attention</li>
+                        <li>Comfortable & Well-Equipped Safari Vehicles</li>
+                        <li>Authentic Wildlife, Cultural & Adventure Experiences</li>
+                        <li>Trusted Travel Planning Across East Africa</li>
+                        <li>Commitment to Responsible & Sustainable Tourism</li>
+                        <li>Seamless Safari & Beach Holiday Combinations</li>
+                        <li>Passion for Creating Lifelong Memories</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-60">
+                <div class="col-lg-10">
+                    <p class="para text-center">From the moment you arrive to the final day of your journey, our dedicated team is committed to delivering safe, comfortable, and unforgettable adventures across East Africa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============== why-choose-section end =============== -->
+
+    <!-- =============== mission-vision-section start =============== -->
+    <div class="mission-vision-section pt-120 pb-120 bg-light">
+        <div class="container">
+            <div class="row g-5 align-items-center justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="mission-content">
+                        <h3 class="tour-details-subtitle">Our Mission</h3>
+                        <h2>Delivering Exceptional Experiences with Purpose</h2>
+                        <p class="para">Our mission is to provide exceptional safari and travel experiences that connect travelers with the beauty, wildlife, cultures, and adventure of East Africa. Through personalized service, authentic experiences, and responsible tourism, we strive to create unforgettable journeys while supporting local communities and preserving the natural environment for future generations.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-10">
+                    <div class="vision-content">
+                        <h3 class="tour-details-subtitle">Our Vision</h3>
+                        <h2>Leading Safari Excellence in Africa</h2>
+                        <p class="para">Our vision is to become a trusted and leading safari brand in Africa, recognized for delivering extraordinary travel experiences, outstanding service, and sustainable tourism that inspires travelers from around the world to explore the beauty of East Africa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============== mission-vision-section end =============== -->
+
+    <!-- =============== responsible-section start =============== -->
+    <div class="responsible-section pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-8 col-xl-10 col-md-10 col-sm-12 text-center">
+                    <div class="section-title1">
+                        <span>Responsible Tourism</span>
+                        <h2>Responsible Tourism & Sustainability</h2>
+                        <p class="para">At Rasset Adventures, we believe travel should create positive and lasting impact for both people and nature. We are committed to responsible tourism practices that help preserve East Africa’s wildlife, natural landscapes, and cultural heritage for future generations.</p>
+                        <img src="assets/images/icons/section-title-vector.svg" alt="image">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center pt-60">
+                <div class="col-lg-10">
+                    <p class="para">We work closely with local communities, support cultural preservation, and encourage sustainable travel experiences that respect the environment and local traditions. From promoting eco-conscious safaris to partnering with local guides and accommodations, we aim to ensure that tourism contributes meaningfully to conservation and community development.</p>
+                    <p class="para">By traveling with Rasset Adventures, you become part of a journey that values authenticity, responsibility, and the protection of Africa’s extraordinary beauty.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============== responsible-section end =============== -->
+
+    <!-- =============== two-image-section start =============== -->
+    <div class="two-image-section pt-60 pb-120">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="image-card">
+                        <img src="assets/images/bg/res-1.png" class="img-fluid" alt="Community Partnership">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="image-card">
+                        <img src="assets/images/bg/res-2.png" class="img-fluid" alt="Conservation Efforts">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============== two-image-section end =============== -->
+
+    
+
+    <!-- =============== guide-section start  =============== -->
+
+    <div class="guide-section pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-6 col-xl-8 col-md-10 col-sm-12 text-center">
+                    <div class="section-title1">
+                        <span>Tour Guides</span>
+                        <h2>Meet Our Expert Team of Safari Guides</h2>
+                        <img src="assets/images/icons/section-title-vector.svg" alt="image">
+                    </div>
+                </div>
+            </div>
+            <div class="row g-xl-5 g-4 justify-content-center">
+                <div class="col-lg-4 col-lg-4 col-md-6 col-sm-10">
+                    <details class="tour-guide-single sibling-2">
+                        <summary>
+                            <div class="guide-image">
+                                <img src="assets/images/bg/steve.jpg" class="img-fluid" alt="STEVE">
+                                <div class="social-area">
+                                    <ul class="guide-social">
+                                        <li><a href="https://www.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a></li>
+                                        <li><a href="https://www.twitter.com/"><i class='bx bxl-twitter'></i></a></li>
+                                        <li><a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a></li>
+                                        <li><a href="https://www.tiktok.com/"><i class='bx bxl-tiktok'></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="guide-contnent">
+                                <h4>STEVE</h4>
+                                <p>Founder and Managing Director</p>
+                            </div>
+                        </summary>
+                        <div class="guide-details">
+                            <p>Steve leads Rasset Adventures with deep safari experience and a passion for responsible travel. He creates unforgettable journeys for travelers who want to explore Kenya's wildlife and culture.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============== guide-section end  =============== -->
+
+    <!-- =============== counter-section start  =============== -->
+
+    <div class="counter-section pb-120">
+        <div class="container">
+            <div class="counter-wrapper">
+                <div class="row g-4 d-flex justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10">
+                        <div class="counter-single text-center d-flex flex-column hover-border1">
+                            <div class="counter-icon">
+                                <svg width="58" height="58" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_1411_6509)">
+                                    <path d="M24.5952 27.0967C24.9237 26.5904 24.7084 24.9308 24.7084 24.9308C12.5069 20.7303 3.37304 15.4559 3.89073 13.3172C4.14222 12.2569 4.49679 11.7958 4.74261 11.7131C5.28636 11.5307 6.52226 12.181 8.03796 13.1779L10.5494 10.2235C9.36335 9.49168 6.42937 7.07992 3.54863 8.02016C2.37843 8.39965 0.823078 9.47242 0.112804 12.4075C-1.5377 19.2882 14.8677 25.4938 23.6674 28.5467L24.594 27.0956L24.5952 27.0967Z"/>
+                                    <path d="M53.152 13.7648C52.7487 13.1984 52.325 12.6422 51.8832 12.1121C49.4083 9.12871 46.3059 6.7278 42.7972 5.08032C39.2884 3.43284 35.4595 2.57933 31.5832 2.58057H31.5198C31.4937 2.58057 31.4631 2.58623 31.4314 2.58623C27.5822 2.60781 23.7844 3.47175 20.3047 5.11739C16.825 6.76303 13.7477 9.15046 11.2889 12.1121C10.8471 12.6479 10.4245 13.1973 10.0269 13.7648C9.71766 14.1998 9.43333 14.6484 9.15579 15.097C9.7052 15.4437 10.3305 15.8163 11.0306 16.2072C11.2719 15.822 11.5109 15.438 11.7692 15.0642C13.5342 16.2266 15.4271 17.1822 17.4106 17.912C17.2973 18.3346 17.2044 18.7764 17.1025 19.2057C17.7459 19.4901 18.4199 19.7721 19.1098 20.0519C19.2231 19.566 19.3182 19.0743 19.4497 18.6065C22.7824 19.626 26.532 20.2411 30.5082 20.3363V23.0947L30.6407 23.1762L30.8299 24.309L31.1199 26.0445L32.673 26.4433V20.3363C33.4422 20.317 34.1943 20.2672 34.9454 20.2105L35.5118 18.6008L35.727 17.9823C34.7302 18.0774 33.7129 18.1465 32.6684 18.1715V4.8394C37.0683 5.51908 40.8621 10.0787 43.0144 16.5991C41.9722 16.9084 40.8677 17.1655 39.744 17.3819C40.5492 17.7822 41.2348 18.3874 41.7321 19.1366C42.3631 18.9792 43.0008 18.8274 43.6125 18.6382C44.4713 21.9484 44.909 25.3537 44.9153 28.7735H41.5565C41.5191 28.9944 41.4874 29.196 41.45 29.4294C42.7629 29.972 44.3285 30.6154 44.6683 30.7547C45.672 31.1705 46.423 31.7901 46.9215 32.5536C46.9668 32.0178 47.0166 31.4865 47.0348 30.9371H52.2457C52.1517 31.6168 52.0622 32.2886 51.9432 32.932C52.2774 32.761 52.5618 32.4336 52.7136 31.8083C52.7821 31.5233 52.8076 31.2297 52.7895 30.9371H55.7563C55.4129 35.2515 53.9099 39.393 51.4063 42.9234C49.6068 41.7415 47.676 40.7728 45.6527 40.037C45.7728 39.6077 45.8668 39.1659 45.9745 38.7241C45.2513 39.2802 44.3616 39.576 43.4494 39.5635C43.1048 39.5612 42.7608 39.5317 42.4208 39.4751L42.3449 39.4627C42.0866 39.4423 41.7264 39.4106 39.5299 38.6606C39.7882 38.314 40.0963 37.8529 40.4361 37.3228V36.2376C41.4557 36.591 42.3302 36.8753 42.533 36.8867C43.0994 36.9252 44.546 37.4236 44.9629 35.6938C45.3797 33.964 44.3002 33.3965 43.6941 33.1495C43.3543 33.0113 41.7627 32.3565 40.4361 31.8117V29.6151L39.6794 31.5024C39.0224 31.2305 38.5557 31.0357 38.5557 31.0357C38.5557 31.0357 40.1903 22.0094 39.7429 20.8664C39.2954 19.7234 37.9496 19.4651 37.9496 19.4651L34.3801 29.5664L30.5036 28.5627L28.8452 28.1345L28.2788 24.744L26.4742 23.584C26.4742 23.584 26.5807 26.3798 26.3088 27.8887C26.2739 28.1246 26.2107 28.3555 26.1208 28.5763C26.0902 28.6398 26.0313 28.7157 25.9871 28.7848C25.7445 29.1613 25.4725 29.5182 25.1738 29.8519C25.0174 30.0286 24.852 30.2053 24.6934 30.382C24.6765 30.4013 24.6561 30.4206 24.6379 30.4398C24.485 30.6041 24.3366 30.7615 24.1848 30.9077C23.692 31.4061 23.2944 31.7777 23.2944 31.7777L24.8804 32.9524L27.5107 30.9451L28.1055 30.484L29.0525 30.9451L31.4439 32.0937L32.6684 32.6805L32.9392 32.8131L28.963 42.7229C28.963 42.7229 30.2703 43.8908 31.2479 43.1341C32.2255 42.3774 36.4113 34.8011 36.4113 34.8011C36.4113 34.8011 37.1374 35.0719 38.0969 35.414L37.8703 35.9691C37.9972 35.9691 38.1229 35.9498 38.2498 35.9498V38.2222C38.1547 38.1849 38.0663 38.1599 37.9655 38.1214C37.8273 38.0965 37.6811 38.084 37.5418 38.0648C37.1125 38.8226 36.7216 39.4978 36.3739 40.0959C38.6217 40.331 40.844 40.7663 43.0144 41.3964C40.8553 47.9168 37.0626 52.4741 32.6628 53.1561V45.2876C32.0284 45.7334 31.2722 45.9735 30.4968 45.9752V53.172C26.0551 52.5625 22.216 48.0029 20.0376 41.4315C22.3943 40.7363 24.8128 40.2712 27.2593 40.0427L28.1565 37.7963C25.1989 38.0093 22.2738 38.5469 19.4338 39.3992C18.7157 36.6347 18.2949 33.8013 18.1786 30.9473H20.4125L20.979 30.4104C19.2118 29.8062 17.5412 29.1983 15.9674 28.5865C15.9674 28.65 15.9617 28.7134 15.9617 28.7769H7.33876C7.34967 27.4556 7.47169 26.1377 7.70352 24.8369C7.00798 24.4586 6.34415 24.0859 5.7143 23.7041C5.35441 25.4466 5.17073 27.2208 5.16602 29C5.16185 34.4592 6.85892 39.7841 10.0213 44.2341C10.4177 44.8005 10.8414 45.3578 11.2832 45.8891C16.1067 51.6665 23.3397 55.3708 31.4269 55.4138C31.4575 55.4138 31.4892 55.4195 31.522 55.4195H31.5855C35.4608 55.42 39.2887 54.5662 42.7964 52.9187C46.3042 51.2713 49.4056 48.8707 51.8798 45.888C52.3329 45.3567 52.7453 44.8016 53.1474 44.2329C56.3054 39.7803 58.0023 34.4566 58.0035 28.9977C58.0047 23.5388 56.3102 18.2144 53.1542 13.7603L53.152 13.7648ZM18.0234 15.8922C16.2753 15.2522 14.6036 14.4202 13.0391 13.4114C15.9011 10.0032 19.644 7.44638 23.8597 6.01979C21.4332 8.35564 19.4202 11.7813 18.0234 15.8922ZM30.5036 18.1715C26.7291 18.0842 23.1755 17.5088 20.0444 16.5674C22.2228 10.0028 26.0551 5.43752 30.5036 4.82693V18.1715ZM7.42032 30.9473H16.0036C16.1349 34.0368 16.6071 37.1023 17.4117 40.088C15.4281 40.8173 13.5348 41.7721 11.7692 42.9336C9.26931 39.4013 7.76707 35.2608 7.42032 30.9473ZM13.0436 44.5886C14.6079 43.5793 16.2796 42.7472 18.028 42.1078C19.4168 46.2165 21.4377 49.6444 23.8688 51.9802C19.654 50.5525 15.9114 47.9963 13.0481 44.5898L13.0436 44.5886ZM39.1141 52.0482C41.5825 49.701 43.6341 46.2358 45.0342 42.0693C46.8203 42.7129 48.5272 43.5582 50.1217 44.5886C47.2171 48.0504 43.4048 50.6337 39.113 52.0482H39.1141ZM39.1141 5.95068C43.4076 7.36559 47.2218 9.94916 50.1285 13.4114C48.7681 14.2832 47.3265 15.0211 45.8238 15.6147L45.6969 15.583L45.6652 15.6781C45.4568 15.7665 45.2495 15.856 45.0342 15.9308C43.6273 11.7711 41.5814 8.30467 39.1141 5.95068ZM47.0801 28.7735C47.0739 25.1212 46.5941 21.4851 45.6527 17.9562C47.6757 17.2199 49.6058 16.2501 51.404 15.0664C54.2428 19.077 55.7868 23.86 55.8288 28.7735H47.0801Z"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1411_6509">
+                                    <rect width="58" height="58" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="coundown d-flex flex-column">
+                                <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                                    <h3 class="odometer" data-odometer-final="1000">1000+</h3><i class="bi bi-plus-lg"></i>
+                                </div>
+                                <p>Awesome Tours</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10">
+                      <div class="counter-single text-center d-flex flex-column hover-border1">
+                        <div class="counter-icon">
+                            <svg width="58" height="58" viewBox="0 0 58 58"  xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1411_6569)">
+                                <path opacity="0.4" d="M14.2061 57.9999C19.6711 57.9999 24.1014 55.7778 24.1014 53.0368C24.1014 50.2958 19.6711 48.0737 14.2061 48.0737C8.74109 48.0737 4.31082 50.2958 4.31082 53.0368C4.31082 55.7778 8.74109 57.9999 14.2061 57.9999Z"/>
+                                <path opacity="0.4" d="M46.6347 32.1141C50.9634 32.1141 54.4725 30.3278 54.4725 28.1242C54.4725 25.9206 50.9634 24.1343 46.6347 24.1343C42.306 24.1343 38.7968 25.9206 38.7968 28.1242C38.7968 30.3278 42.306 32.1141 46.6347 32.1141Z"/>
+                                <path d="M36.85 27.6665C28.285 25.3732 27.6651 41.5385 40.1184 38.6297C61.2232 33.7005 62.6019 53.4524 42.7104 52.7253C37.4839 52.5341 29.4119 52.6507 26.2564 52.7253" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.4213 53.7182C12.5591 52.7634 2.40155 44.0015 0.313615 33.9476C-1.77433 23.8938 6.97242 17.3223 14.4213 17.3223C20.7417 17.3223 29.4883 22.7704 28.3034 33.4982C27.852 36.8683 26.2154 44.1698 14.4213 53.7182ZM18.8105 28.6108C18.8105 31.0831 16.7489 33.0873 14.2058 33.0873C11.6627 33.0873 9.60108 31.0831 9.60108 28.6108C9.60108 26.1385 11.6627 24.1343 14.2058 24.1343C16.7489 24.1343 18.8105 26.1385 18.8105 28.6108Z"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M46.9038 28.8054C45.4269 28.0496 37.3708 21.1151 35.7149 13.158C34.0589 5.20097 40.996 -5.78936e-06 46.9038 0C51.9165 4.91217e-06 58.8535 4.31191 57.9138 12.8024C57.5556 15.4696 56.2577 21.2484 46.9038 28.8054ZM49.9662 8.66112C49.9662 10.4347 48.5187 11.8725 46.7331 11.8725C44.9475 11.8725 43.5 10.4347 43.5 8.66112C43.5 6.8875 44.9475 5.44971 46.7331 5.44971C48.5187 5.44971 49.9662 6.8875 49.9662 8.66112Z"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_1411_6569">
+                                <rect width="58" height="58" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                          <div class="coundown d-flex flex-column">
+                            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                                <h3 class="odometer" data-odometer-final="50">50</h3><i class="bi bi-plus-lg"></i>
+                            </div>
+                              <p>Stunning Destinations</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10">
+                      <div class="counter-single text-center d-flex flex-column hover-border1">
+                        <div class="counter-icon">
+                            <svg width="58" height="58" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M44.2644 38.4715C48.5751 34.4076 51.2707 28.6484 51.2707 22.2707C51.2707 17.1945 49.6071 12.4133 46.4598 8.44414C43.4069 4.59392 39.1133 1.82669 34.3702 0.652186C33.7636 0.502203 33.1488 0.87218 32.9984 1.47948C32.8481 2.08678 33.2184 2.70099 33.8258 2.85143C42.7631 5.06449 49.0051 13.0501 49.0051 22.2707C49.0051 33.3014 40.0309 42.2755 29.0001 42.2755C17.9695 42.2755 8.99522 33.3014 8.99522 22.2707C8.99522 13.0501 15.2372 5.06449 24.1746 2.85143C24.7819 2.70099 25.1522 2.08678 25.0019 1.47948C24.8515 0.87218 24.2371 0.501636 23.6299 0.652186C18.8868 1.82669 14.5934 4.59392 11.5405 8.44414C8.39318 12.4133 6.72961 17.1945 6.72961 22.2707C6.72961 28.6483 9.42514 34.4076 13.7357 38.4714L7.80498 49.814C7.51578 50.3671 7.7285 51.05 8.28066 51.341L8.32147 51.3625C8.57472 51.4961 8.86907 51.5286 9.14566 51.4538L17.3651 49.2286L20.2291 57.2483C20.3805 57.6721 20.7684 57.9661 21.2174 57.9975C21.2438 57.9993 21.27 58.0001 21.2962 58.0001C21.7156 58.0001 22.1034 57.7676 22.2998 57.3923L29.0001 44.5778L35.7006 57.3923C35.8968 57.7677 36.2848 58.0003 36.7041 58.0001C36.7303 58.0001 36.7566 57.9993 36.7829 57.9975C37.2319 57.9663 37.6198 57.6721 37.7713 57.2483L40.6352 49.2286L48.8546 51.454C49.1309 51.5289 49.4254 51.4963 49.6788 51.3627L49.7196 51.3412C50.2718 51.0501 50.4845 50.3673 50.1952 49.8141L44.2644 38.4715ZM21.4918 54.0477L19.1466 47.4805C18.9478 46.9239 18.3541 46.6134 17.7837 46.7681L10.993 48.6067L15.5063 39.975C18.6373 42.3671 22.4183 43.9485 26.5343 44.404L21.4918 54.0477ZM40.2165 46.7681C39.6461 46.6136 39.0525 46.9239 38.8537 47.4805L36.5084 54.0477L31.4658 44.404C35.5819 43.9485 39.3629 42.3671 42.4938 39.975L47.0072 48.6067L40.2165 46.7681Z"/>
+                                <path d="M29 2.26562C29.6256 2.26562 30.1328 1.75844 30.1328 1.13281C30.1328 0.507177 29.6256 0 29 0C28.3744 0 27.8672 0.507177 27.8672 1.13281C27.8672 1.75844 28.3744 2.26562 29 2.26562Z"/>
+                                <path d="M12.3937 22.2706C12.3937 31.4273 19.8433 38.877 29.0002 38.877C38.1571 38.877 45.6067 31.4274 45.6067 22.2706C45.6067 13.1137 38.1571 5.66406 29.0002 5.66406C19.8433 5.66406 12.3937 13.1137 12.3937 22.2706ZM43.341 22.2706C43.341 30.1781 36.9077 36.6113 29.0002 36.6113C21.0926 36.6113 14.6593 30.1781 14.6593 22.2706C14.6593 14.3629 21.0926 7.92969 29.0002 7.92969C36.9077 7.92969 43.341 14.3629 43.341 22.2706Z"/>
+                                <path d="M27.9805 16.1747L25.6466 21.0041L20.4157 19.8176C20.0068 19.725 19.5804 19.8655 19.3069 20.1831C19.0334 20.5007 18.9575 20.9434 19.1097 21.3339L21.218 26.7407H21.0707C20.4451 26.7407 19.9379 27.2478 19.9379 27.8735C19.9379 28.4991 20.4451 29.0063 21.0707 29.0063H36.9301C37.5556 29.0063 38.0629 28.4991 38.0629 27.8735C38.0629 27.2478 37.5556 26.7407 36.9301 26.7407H36.7828L38.8911 21.3339C39.0434 20.9434 38.9677 20.5007 38.6941 20.1831C38.4207 19.8654 37.9942 19.725 37.5852 19.8175L32.3543 21.004L30.0204 16.1746C29.8313 15.7833 29.435 15.5347 29.0004 15.5347C28.5659 15.5348 28.1695 15.7834 27.9805 16.1747ZM30.7063 22.801C30.9358 23.2759 31.4627 23.5295 31.9769 23.4128L36.005 22.4992L34.3513 26.7408H23.6499L21.996 22.4992L26.0242 23.4128C26.5384 23.5292 27.0652 23.2759 27.2948 22.801L29.0004 19.271L30.7063 22.801Z"/>
+                            </svg>
+                        </div>
+                          <div class="coundown d-flex flex-column">
+                            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                                <h3 class="odometer" data-odometer-final="2000">2000+</h3><i class="bi bi-plus-lg"></i>
+                            </div>
+                              <p>Satisfied Customers</p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-10">
+                        <div class="counter-single text-center d-flex flex-column hover-border1">
+                            <div class="counter-icon">
+                                <svg width="58" height="58" viewBox="0 0 58 58" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.618 4.9957C23.3586 5.55078 19.8582 8.91524 19.0313 13.2539C18.85 14.1715 18.884 16.1539 19.0879 17.1281C20.0508 21.818 24.1742 25.1484 29 25.1484C33.8258 25.1484 37.9492 21.818 38.9121 17.1281C39.116 16.1539 39.15 14.1715 38.9688 13.2539C38.5383 10.9996 37.5754 9.23242 35.8762 7.62383C34.3582 6.18516 32.3758 5.25625 30.2348 4.98438C29.1699 4.85977 28.7055 4.85977 27.618 4.9957ZM30.9484 8.72266C33.6672 9.56094 35.5816 12.1551 35.5816 14.9984C35.5703 16.8676 34.9473 18.4082 33.6332 19.7109C32.3984 20.957 30.7445 21.6367 29 21.6367C27.2555 21.6367 25.6016 20.957 24.3668 19.7109C23.0641 18.4082 22.4297 16.8676 22.4184 15.0098C22.4184 11.8266 24.7406 9.0625 27.9012 8.49609C28.7055 8.36016 30.0988 8.46211 30.9484 8.72266Z"/>
+                                    <path d="M9.78752 14.4434C4.99572 15.4856 2.36759 20.7305 4.4633 25.0919C6.04923 28.4223 9.66291 30.1216 13.2086 29.2266C17.8871 28.0372 20.2774 22.8602 18.1363 18.5216C16.607 15.429 13.1067 13.7184 9.78752 14.4434ZM12.9707 18.1704C14.8172 19.0087 15.8367 21.195 15.2363 23.0188C14.0242 26.6665 9.24377 26.9723 7.62384 23.5059C7.35197 22.9282 7.30666 22.679 7.30666 21.8634C7.30666 21.0024 7.35197 20.8098 7.68048 20.1415C8.05431 19.3712 8.76798 18.6235 9.459 18.261C10.5012 17.7173 11.9059 17.6833 12.9707 18.1704Z"/>
+                                    <path d="M45.0293 14.4547C40.2262 15.5309 37.6887 20.8664 39.875 25.2844C41.1551 27.8672 43.7492 29.4531 46.6719 29.4531C50.8746 29.4531 54.2504 26.0887 54.2617 21.8859C54.273 18.6008 52.0527 15.5988 48.8808 14.6133C47.8273 14.2848 46.1055 14.2168 45.0293 14.4547ZM47.6347 17.9437C48.8582 18.2609 49.7644 19.0086 50.3195 20.1414C50.648 20.8098 50.6933 21.0023 50.6933 21.8633C50.6933 22.6789 50.648 22.9281 50.3762 23.5059C49.6851 24.9898 48.2465 25.9414 46.6719 25.9414C44.3496 25.9414 42.4805 23.959 42.6164 21.6594C42.7637 19.1219 45.2332 17.298 47.6347 17.9437Z"/>
+                                    <path d="M23.166 26.0093C22.2824 26.1226 21.3988 26.3491 20.7191 26.621C19.1558 27.2554 17.5586 28.5921 16.7316 29.9968C16.4031 30.5292 16.3351 30.5858 16.0859 30.5179C15.5762 30.3706 7.70311 30.3366 6.91014 30.4726C3.97616 30.9823 1.35936 33.2706 0.362486 36.2159L0.0566266 37.0995L0.0226422 42.9788C-0.0113422 48.6769 -1.40322e-05 48.8694 0.226548 49.5604C0.838267 51.3956 2.44686 52.7437 4.32733 53.0155C5.27889 53.1628 52.7211 53.1628 53.6726 53.0155C55.5531 52.7437 57.1617 51.3956 57.7734 49.5604C58 48.8694 58.0113 48.6769 57.9773 42.9788L57.9433 37.0995L57.6375 36.2159C56.6406 33.2706 54.0238 30.9823 51.0898 30.4726C50.2969 30.3366 42.4238 30.3706 41.914 30.5179C41.6648 30.5858 41.5969 30.5292 41.2683 29.9968C40.4527 28.6147 38.8441 27.2554 37.3375 26.6437C35.8082 26.0206 35.8308 26.0206 29.4531 25.9979C26.1793 25.9753 23.3586 25.9866 23.166 26.0093ZM34.7773 29.5663C36.6125 29.8608 38.1871 31.2089 38.8328 33.0554C38.9914 33.5312 39.014 34.5167 39.048 41.5968L39.0933 49.6171H29H18.9066L18.9519 41.5968C18.9859 34.5167 19.0086 33.5312 19.1672 33.0554C19.8015 31.2542 21.3875 29.8608 23.1094 29.5776C23.993 29.4417 33.8711 29.4304 34.7773 29.5663ZM15.157 33.939L15.4062 34.0069V41.812V49.6284L10.0027 49.5944L4.58788 49.5604L4.21405 49.2999C3.43241 48.7448 3.45506 48.8808 3.45506 43.2167C3.45506 38.153 3.45506 38.119 3.72694 37.3487C4.2367 35.8534 5.51678 34.5733 6.96678 34.1089C7.5785 33.905 7.99764 33.8823 11.2715 33.8823C13.2652 33.871 15.0098 33.905 15.157 33.939ZM50.9879 34.0976C52.4719 34.562 53.7519 35.8308 54.273 37.3487C54.5449 38.119 54.5449 38.153 54.5449 43.2167C54.5449 48.8808 54.5676 48.7448 53.7859 49.2999L53.4121 49.5604L48.0086 49.5944L42.5937 49.6284V41.812C42.5937 34.4714 42.6051 33.9956 42.7976 33.9503C42.8996 33.9163 44.6328 33.8937 46.6265 33.8823C49.9797 33.871 50.3308 33.8937 50.9879 34.0976Z"/>
+                                </svg>
+                            </div>
+                          <div class="coundown d-flex flex-column">
+                            <div class="d-flex flex-row justify-content-center align-items-center gap-2">
+                                <h3 class="odometer" data-odometer-final="10">10+</h3><i class="bi bi-plus-lg"></i>
+                            </div>
+                              <p>Travel Guides</p>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- =============== counter-section end  =============== -->
+
+    <!-- =============== testimonial-section start  =============== -->
+
+    <div class="testimonial-section overflow-hidden">
+        <div class="container-fluid px-0">
+            <div class="testimonial-wrapper">
+                <div class="testimonial-area">
+                    <img src="assets/images/icons/testi-quote.svg" class="testi-quote" alt="image">
+                    <div class="testimonial-wrap fadeInLeft">
+                        <div class="swiper testimonial1-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-single1">
+                                        <div class="testimonial-content">
+                                            <ul class="star-list">
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                            </ul>
+                                            <p>This place is great! I had a very pleasant stay here. Great stuff and beautiful destinations with a fabulous view.</p>
+                                        </div>
+                                        <div class="testi-author1">
+                                            <div class="image">
+                                                <img src="assets/images/icons/rasset-icon-1.png" alt="image">
+                                            </div>
+                                            <div class="author-text">
+                                                <h5>Angel</h5>
+                                                <p>South America.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-single1">
+                                        <div class="testimonial-content">
+                                            <ul class="star-list">
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                            </ul>
+                                            <p>I loved my first experience of Africa. The Rasset team was very professional and made my trip unforgettable.</p>
+                                        </div>
+                                        <div class="testi-author1">
+                                            <div class="image">
+                                                <img src="assets/images/icons/rasset-icon-1.png" alt="image">
+                                            </div>
+                                            <div class="author-text">
+                                                <h5>Willium Hambrom</h5>
+                                                <p> Netherland.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-single1">
+                                        <div class="testimonial-content">
+                                            <ul class="star-list">
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                                <li><i class="bi bi-star-fill"></i></li>
+                                            </ul>
+                                            <p>Booking a Safari experience with Rasset was the best decision I made. The guides were knowledgeable and the wildlife sightings were incredible.</p>
+                                        </div>
+                                        <div class="testi-author1">
+                                            <div class="image">
+                                                <img src="assets/images/icons/rasset-icon-1.png" alt="image">
+                                            </div>
+                                            <div class="author-text">
+                                                <h5>Sara </h5>
+                                                <p>Germany.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial1-pagination d-flex align-items-center justify-content-sm-end justify-content-center pt-sm-0 pt-4"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter-area">
+                    <div class="banner-form-box">
+                        <h3>Join Newsletter</h3>
+                        <p>Subscribe to our travel newsletter for exclusive offers, curated adventures, hidden gems, and unforgettable travel inspiration delivered straight to your inbox.</p>
+                        <form class="newsletter-form">
+                            <div class="form-inner">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="form-inner">
+                                <input type="email" placeholder="Your E-mail">
+                            </div>
+                            <button class="eg-btn btn--primary btn--lg w-100">Join Us</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============== testimonial-section end  =============== -->
+
+    <!-- =============== facilitise-section start  =============== -->
+
+   <div class="facilities-section2 pt-120 pb-120">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xxl-6 col-xl-8 col-md-10 col-sm-12 text-center">
+                <div class="section-title1">
+                    <span>Why Choose Us</span>
+                    <h2>Rasset Adventures Extra Facilities!</h2>
+                    <img src="assets/images/icons/section-title-vector.svg" alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center g-4">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10 ">
+                <div class="facility-single2">
+                    <div class="facility-icon">
+                        <img src="assets/images/icons/facility-icon41.svg" alt="image">
+                    </div>
+                    <div class="facility-content">
+                        <h4>Best Rate Gurantee</h4>
+                        <p>Enjoy the best value for your journey with our guaranteed competitive rates and exceptional travel experiences.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10 ">
+                <div class="facility-single2">
+                    <div class="facility-icon">
+                        <img src="assets/images/icons/facility-icon42.svg" alt="image">
+                    </div>
+                    <div class="facility-content">
+                        <h4>Travel Assistance</h4>
+                        <p>Our expert travel consultants are available to help you plan the perfect trip tailored to your preferences and budget.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10 ">
+                <div class="facility-single2">
+                    <div class="facility-icon">
+                        <img src="assets/images/icons/facility-icon43.svg" alt="image">
+                    </div>
+                    <div class="facility-content">
+                        <h4>Curated Travel Experiences</h4>
+                        <p>Carefully crafted travel experiences designed to inspire adventure, comfort, and unforgettable memories.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10 ">
+                <div class="facility-single2">
+                    <div class="facility-icon">
+                        <img src="assets/images/icons/facility-icon44.svg" alt="image">
+                    </div>
+                    <div class="facility-content">
+                        <h4>Online Support 24/7</h4>
+                        <p>24/7 online support to assist you anytime, anywhere for a smooth and stress-free travel experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- =============== facilitise-section end  =============== -->  
+
+    <!-- =============== instargam-feed-section start =============== -->
+
+    <div class="instagram-feed-section">
+        <div class="container">
+            <div class="row justify-content-lg-start justify-content-center">
+                <div class="col-lg-4">
+                    <div class="section-title-small text-lg-start text-center">
+                        <i class="bi bi-instagram"></i><span>Instagram Feed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-0">
+            <div class="swiper insta-feed-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="insta-feed-single">
+                            <img src="assets/images/bg/footer-1.jpg" alt="image">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="insta-feed-single">
+                            <img src="assets/images/bg/footer-2.jpg" alt="image">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="insta-feed-single">
+                            <img src="assets/images/bg/footer-3.jpg" alt="image">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="insta-feed-single">
+                            <img src="assets/images/bg/footer-4.jpg" alt="image">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="insta-feed-single">
+                            <img src="assets/images/bg/footer-5.jpg" alt="image">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="insta-feed-single">
+                            <img src="assets/images/bg/54-insta.jpg" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =============== instargam-feed-section end =============== -->
+  
+    <!-- =============== Footer-section start ============ -->
+
+    <footer class="footer-section sibling-3">
+        <div class="footer-top">
+            <div class="container-xl container-lg-fluid container">
+                <div class="row justify-content-center gy-5">
+                    <div class="col-lg-3 col-md-10 col-sm-6 col-11 order-sm-0 order-1">
+                        <div class="footer-about">
+                            <div class="footer1-logo">
+                                <img src="assets/images/icons/logo.jpeg" alt="image">
+                                <p>Since: 2022</p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                version="1.1" viewBox="0 0 400 400">
+                                <defs>
+                                    <!-- The text path: see links above regarding coordinate system -->
+                                    <path d="M0, 200a200, 200 0 1, 0 400, 0a200, 200 0 1, 0 -400, 0" id="txt-path"
+                                        fill="white"></path>
+                                </defs>
+
+                                <text fill="#DDDDDD" font-size="35.5" font-family="Helvetica Neue" font-weight="600">
+                                    <!-- This is the magic -->
+                                    <textPath startOffset="0" xlink:href="#txt-path">Rasset Adventures And Travel 
+                                        &nbsp; Rasset Adventures And Travel </textPath>
+                                </text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-lg-center">
+                        <div class="footer-item">
+                            <h4>Information</h4>
+                            <ul class="link-list">
+                                <li><a href="about.html">About Company</a></li>
+                                <li><a href="query.html">Online Query</a></li>
+                                <li><a href="contact.html">Become Partner</a></li>
+                                <li><a href="query.html">Help & Support</a></li>
+                                <li><a href="privacy.html">Privacy Policy</a></li>
+                                <li><a href="terms.html">Terms of Use</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-lg-center">
+                        <div class="footer-item">
+                            <h4>Destinations</h4>
+                            <ul class="link-list">
+                                <li><a href="maasai-mara.html">Maasai Mara National Reserve</a></li>
+                                <li><a href="nairobi-national-park.html">Nairobi National Park</a></li>
+                                <li><a href="amboseli.html">Amboseli National Park</a></li>
+                                <li><a href="lake-nakuru.html">Lake Nakuru National Park</a></li>
+                                <li><a href="tsavo.html">Tsavo National Park</a></li>
+                                <li><a href="serengeti.html">Serengeti National Park</a></li>
+                                <li><a href="diani-beach.html">Diani Beach</a></li>
+                                <li><a href="zanzibar.html">Zanzibar</a></li>
+                                <li><a href="ol-pejeta.html">Ol Pejeta</a></li>
+                                <li><a href="mount-kenya.html">Mount Kenya</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 d-flex justify-content-lg-center">
+                        <div class="footer-item">
+                            <h4>Reach Us</h4>
+                            <ul class="contact-list">
+                                <li>
+                                    <div class="icon">
+                                        <i class="bi bi-telephone"></i>
+                                    </div>
+                                    <div class="text">
+                                        <a href="tel:+254714098121">+254714098121</a>
+                                        <a href="tel:+254714098121">+254714098121</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <a
+                                            href="mailto:info@rassetadventures.com">info@rassetadventures.com</a>
+
+                                        <a
+                                            href="mailto:rassetadventures@gmail.com">rassetadventures@gmail.com</a>
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="text">
+                                        Nairobi Diamond Ivy, 00100, Nanyuki 203, CN TOWERS
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer-meta">
+                    <div
+                        class="col-lg-6 d-flex justify-content-lg-start justify-content-center align-items-center mb-lg-0 mb-5">
+                        <h4>Stay Connected:</h4>
+                        <ul class="footer-social">
+                            <li><a href="https://www.whatsapp.com/"><i class='bx bxl-whatsapp'></i></a></li>
+                            <li><a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a></li>
+                            <li><a href="https://www.tiktok.com/"><i class='bx bxl-tiktok'></i></a></li>
+                            <li><a href="https://www.twitter.com/"><i class='bx bxl-twitter'></i></a></li>
+                            <li><a href="https://www.linkedin.com/"><i class='bx bxl-linkedin'></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+                        <h4>Pay Safely With Us!</h4>
+                        <ul class="pay-list">
+                            <li><img src="assets/images/icons/pay1.svg" alt="image"></li>
+                            <li><img src="assets/images/icons/pay2.svg" alt="image"></li>
+                            <li><img src="assets/images/icons/pay3.svg" alt="image"></li>
+                            <li><img src="assets/images/icons/pay4.svg" alt="image"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="row d-flex align-items-center g-3">
+                    <div
+                        class="col-lg-6 d-flex justify-content-lg-start justify-content-center text-lg-start text-center px-1">
+                        <p>Copyright 2026 <a href="#" class="egns-lab">Rasset Adventures </a> | Design By <a
+                                href="about.html"
+                                class="egns-lab">RASSET ADVENTURES AND TRAVEL</a></p>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center align-items-center">
+                        <ul class="f-bottom-list d-flex jusify-content-start align-items-center">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =============== Footer-section end =============== -->
+
+    <!-- js file link -->
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
+        integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+        data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
+</body>
+
+
+<!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:33:45 GMT -->
+
+</html>
+
+
+

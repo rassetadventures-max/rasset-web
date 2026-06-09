@@ -1,0 +1,122 @@
+.hero-banner, .inner-banner-section.sibling-2 {
+  min-height: 650px;
+  width: 100%;
+  max-width: 1960px;
+  object-fit: cover;
+  object-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto 40px auto;
+  border-radius: 18px;
+  overflow: hidden;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center !important;
+}
+
+.hero-banner::before, .inner-banner-section.sibling-2::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.hero-banner .breadcrumb-area, .inner-banner-section .breadcrumb-area {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.hero-banner .breadcrumb-area h2, .inner-banner-section .breadcrumb-area h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 0;
+  line-height: 1.25;
+  text-transform: capitalize;
+}
+.hero-banner .breadcrumb-area span, .inner-banner-section .breadcrumb-area span {
+  font-size: 2.2rem;
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+}
+.hero-banner .review-area .star-list li i, .inner-banner-section .review-area .star-list li i {
+  color: #ffd91c;
+  font-size: 14px;
+}
+.hero-banner .review-area span, .inner-banner-section .review-area span {
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Merriweather', serif;
+  font-weight: 600;
+  margin-left: 12px;
+}
+
+/* Content Images - Premium Sizing */
+.blog-details-single img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 32px auto 32px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+/* Headings and Typography */
+.blog-details-single h1, .blog-details-single h2, .blog-details-single h3 {
+  font-family: 'Merriweather', serif;
+  font-weight: 800;
+  color: #222;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+.blog-details-single h1 { font-size: 3.2rem; }
+.blog-details-single h2 { font-size: 2.4rem; }
+.blog-details-single h3 { font-size: 2rem; }
+
+.blog-details-single p, .blog-details-single li {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.15rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Sidebar and Section Spacing */
+.blog-sidebar, .booking-form-box, .sidebar-offer {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.07);
+  padding: 32px 24px;
+  margin-bottom: 32px;
+}
+
+.blog-details-section, .blog-details-single {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* Section Titles */
+.blog-details-single .section-title, .blog-details-single .tour-details-subtitle {
+  font-family: 'Merriweather', serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .hero-banner, .inner-banner-section.sibling-2 { min-height: 400px; }
+  .blog-details-single img { max-width: 100%; }
+  .blog-sidebar, .booking-form-box, .sidebar-offer { padding: 20px 10px; }
+  .hero-banner .breadcrumb-area h2, .inner-banner-section .breadcrumb-area h2 { font-size: 2.5rem; }
+}
+
+

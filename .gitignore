@@ -1,0 +1,9 @@
+# Ignore local cache and temporary files
+hts-cache/
+*.bak
+*.log
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code workspace settings if present
+.vscode/

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center | Rasset Adventures</title>
+    <link rel="icon" href="assets/images/icons/rasset-logo.jpg" type="image/gif" sizes="20x20">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom-blog.css">
+    <style>
+        body { background: #f4eddd; color: #4a3723; }
+        .query-hero { padding: 120px 0 80px; background-image: url('assets/images/bg/hero-139.png'); background-size: cover; background-position: center; position: relative; color: #fff; }
+        .query-hero::before { content: ""; position: absolute; inset: 0; background: rgba(10, 18, 33, 0.45); }
+        .query-hero .container { position: relative; z-index: 1; }
+        .query-hero h1 { font-size: 52px; margin-bottom: 16px; letter-spacing: -.03em; color: #fff; }
+        .query-hero small { display: block; color: rgba(255,255,255,.87); margin-bottom: 24px; font-size: 20px; line-height: 1.6; }
+        .query-hero p { font-size: 18px; max-width: 760px; margin: 0 auto; color: rgba(255,255,255,.92); }
+        .query-hero .hero-cta { margin-top: 32px; }
+        .help-section { padding: 80px 0; }
+        .help-section.bg-light { background: #f8eee1; }
+        .blog-details-single > p { font-size: 18px; line-height: 1.7; }
+        .help-section h2 { margin-bottom: 30px; color: #4a3723; }
+        .feature-card { min-height: 220px; border: 1px solid rgba(74,55,35,.14); transition: transform .25s ease, box-shadow .25s ease; background: #fff; border-radius: 24px; }
+        .feature-card:hover { transform: translateY(-6px); box-shadow: 0 28px 60px rgba(74,55,35,.08); }
+        .feature-card .icon { font-size: 32px; color: #14a64a; margin-bottom: 16px; }
+        .feature-card h4 { margin-bottom: 14px; color: #4a3723; font-size: 1.15rem; }
+        .feature-card .feature-description { color: #6a5a45; font-size: 0.96rem; line-height: 1.75; margin-bottom: 20px; }
+        .feature-card .read-more { color: #14a64a; font-weight: 600; text-decoration: none; }
+        .feature-card .read-more:hover { text-decoration: underline; }
+        .feature-card p { margin: 0; font-weight: 700; color: #4a3723; }
+        .faq-item summary { cursor: pointer; font-weight: 700; margin-bottom: 10px; list-style: none; position: relative; padding-right: 30px; display: flex; justify-content: space-between; align-items: center; font-size: 1.75rem; line-height: 1.6; }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after { content: "▼"; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 1.3rem; color: #4a3723; transition: transform 0.25s ease; }
+        .faq-item[open] summary::after { transform: translateY(-50%) rotate(180deg); }
+        .faq-item { background: #fff; border: 1px solid rgba(74,55,35,.12); border-radius: 24px; padding: 30px; margin-bottom: 24px; box-shadow: 0 18px 32px rgba(74,55,35,.06); }
+        .faq-item p { margin: 0; color: #5d4b35; font-size: 1.55rem; line-height: 1.8; margin-top: 18px; }
+        .help-topic-layout { margin-top: 40px; }
+        .topic-list { background: #fff; border: 1px solid rgba(74,55,35,.12); border-radius: 24px; padding: 24px; }
+        .topic-list h4 { font-size: 1.9rem; font-weight: 700; margin-bottom: 18px; color: #4a3723; }
+        .topic-item { display: block; width: 100%; text-align: left; padding: 16px 20px; border-radius: 14px; background: transparent; border: none; color: #4a3723; font-size: 1.6rem; font-weight: 700; margin-bottom: 12px; cursor: pointer; transition: background .25s ease, color .25s ease; }
+        .topic-item:hover, .topic-item.active { background: #f8eee1; color: #14a64a; }
+        .topic-item span { display: block; font-size: 1.35rem; color: #6a5a45; font-weight: 500; margin-top: 4px; }
+        .faq-panel { border-radius: 24px; }
+        .topic-content { display: none; }
+        .topic-content.active { display: block; }
+        .topic-content h4 { font-size: 2.2rem; font-weight: 700; margin-bottom: 24px; color: #4a3723; }
+        .download-guides li, .blog-details-feature-list li { margin-bottom: 14px; }
+        .download-guides li a, .blog-details-feature-list li a { color: #4a3723; text-decoration: none; font-weight: 600; font-size: 1.6rem; }
+        .download-guides li a:hover, .blog-details-feature-list li a:hover { text-decoration: underline; }
+        .contact-block { padding: 60px 30px; background: #fff6ea; border-radius: 20px; }
+        .contact-block .contact-details { color: #4a3723; font-size: 16px; margin-bottom: 20px; }
+        .contact-block .contact-details strong { color: #2c572a; }
+        .btn-primary { background: #14a64a; border-color: #14a64a; }
+        .btn-primary:hover, .btn-primary:focus { background: #0f8e3c; border-color: #0f8e3c; }
+        footer { background: #2d2a2a; color: #fff; }
+    </style>
+</head>
+<body>
+    <!-- preloader -->
+    <div class="home5preloader">
+        <div class="egns-preloader">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6">
+                        <div class="circle-border">
+                            <div class="moving-circle"></div>
+                            <div class="moving-circle"></div>
+                            <div class="moving-circle"></div>
+                            <svg width="180px" height="150px" viewBox="0 0 187.3 93.7" preserveAspectRatio="xMidYMid meet" style="left: 50%; top: 50%; position: absolute; transform: translate(-50%, -50%) matrix(1, 0, 0, 1, 0, 0);">
+                                <path stroke="#D90A2C" id="outline" fill="none" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+                                <path id="outline-bg" opacity="0.05" fill="none" stroke="#959595" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M93.9,46.4c9.3,9.5,13.8,17.9,23.5,17.9s17.5-7.8,17.5-17.5s-7.8-17.6-17.5-17.5c-9.7,0.1-13.3,7.2-22.1,17.1 c-8.9,8.8-15.7,17.9-25.4,17.9s-17.5-7.8-17.5-17.5s7.8-17.5,17.5-17.5S86.2,38.6,93.9,46.4z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header class="header-area style-5" style="padding: 25px 0; background: #fff; box-shadow: 0 1px 10px rgba(0,0,0,.05);">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="index.html"><img alt="Rasset Adventures" src="assets/images/icons/header-2.png" style="max-height: 70px;"></a>
+            <nav>
+                <a href="index.html" style="margin-right:18px; color:#222; text-decoration:none; font-weight:600;">Home</a>
+                <a href="destination.html" style="margin-right:18px; color:#222; text-decoration:none; font-weight:600;">Destinations</a>
+                <a href="tour-package.html" style="margin-right:18px; color:#222; text-decoration:none; font-weight:600;">Tours</a>
+                <a href="about.html" style="margin-right:18px; color:#222; text-decoration:none; font-weight:600;">About Us</a>
+                <a href="gallery.html" style="margin-right:18px; color:#222; text-decoration:none; font-weight:600;">Gallery</a>
+                <a href="blog-grid.html" style="margin-right:18px; color:#222; text-decoration:none; font-weight:600;">Blogs</a>
+                <a href="contact.html" style="color:#222; text-decoration:none; font-weight:600;">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="query-hero text-center">
+        <div class="container">
+            <h1>Help Center</h1>
+            <small>PLANNING A TRIP OR ALREADY ON YOUR WAY? OUR HELP CENTER IS HERE TO GUIDE YOU EVERY STEP OF THE WAY.</small>
+            <p>SEE FAQ’S, BROWSE HELP BY TOPIC, OR GET IN TOUCH FOR PERSONALIZED ASSISTANCE. LET’S MAKE YOUR JOURNEY UNFORGETTABLE.</p>
+            <div class="hero-cta">
+                <a href="contact.html" class="btn btn-primary">Contact us now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog-standard-section pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="blog-details-single">
+                        <p class="mb-4">Whether you are planning your first safari or preparing for a return journey, our support center makes it easy to find answers, download guides, and connect with our travel experts.</p>
+
+                        <div class="faq-section mb-5">
+                            <h3 class="blog-details-subtitle">Popular Questions</h3>
+                            <details class="faq-item"><summary>Do I need travel insurance?</summary><p>Travel insurance is strongly recommended for every trip. It should cover medical emergencies, cancellations, delays, and any adventure activities you take part in.</p></details>
+                            <details class="faq-item"><summary>Do I need a visa for my trip?</summary><p>Visa requirements vary by nationality and destination. Some countries offer eVisas, others have visa-on-arrival options. Check the latest rules before you travel.</p></details>
+                            <details class="faq-item"><summary>When is the best time to travel?</summary><p>The best season depends on your destination and desired experience. Dry season is usually best for safaris; low season can offer fewer crowds and better value.</p></details>
+                            <details class="faq-item"><summary>Is it safe to travel?</summary><p>Travel is generally safe when you book through trusted operators and follow local advice. Keep your belongings secure and stay aware of destination-specific conditions.</p></details>
+                            <details class="faq-item"><summary>What payment methods are accepted?</summary><p>Major cards are accepted in many places, but remote areas often prefer cash. Carry some USD, EUR, or local currency for tips and smaller purchases.</p></details>
+                            <details class="faq-item"><summary>What’s included in my tour package?</summary><p>Packages usually include accommodation, guided activities, park fees, and ground transport. Flights, extra meals, and optional excursions are normally excluded unless noted.</p></details>
+                            <details class="faq-item"><summary>What happens if I need to cancel my trip?</summary><p>Cancellation policies vary by tour. Refunds are often partial close to departure, so travel insurance is recommended to protect against unexpected changes.</p></details>
+                            <details class="faq-item"><summary>What should I pack for my trip?</summary><p>Packing depends on the trip type. For safaris, choose neutral clothing and sun protection. For trekking, bring warm layers and sturdy footwear.</p></details>
+                            <details class="faq-item"><summary>What are the tipping guidelines?</summary><p>Tipping is customary but optional. Typical amounts are $10-20 per person per day for guides, $5-10 per day for lodge staff, and $5-15 per porter.</p></details>
+                            <details class="faq-item"><summary>Can I customize my trip?</summary><p>Yes. Many tours can be tailored to your preferences, including luxury upgrades, private guides, extended stays, and extra activities.</p></details>
+                        </div>
+
+                        <div class="help-topic-layout">
+                            <div class="row gx-5">
+                                <div class="col-lg-4">
+                                    <div class="topic-list">
+                                        <h4>Help Topics</h4>
+                                        <button class="topic-item active" data-target="topic-destination">By Destination<span>Destination planning, timing, and top highlights.</span></button>
+                                        <button class="topic-item" data-target="topic-before">Before You Travel<span>Packing, visas, insurance, and pre-trip planning.</span></button>
+                                        <button class="topic-item" data-target="topic-during">During Your Trip<span>On-tour support, itineraries, and local guidance.</span></button>
+                                        <button class="topic-item" data-target="topic-after">After Your Trip<span>Post-trip follow-up, feedback, and memories.</span></button>
+                                        <button class="topic-item" data-target="topic-health">Health &amp; Safety<span>Wellbeing, safety advice, and responsible travel.</span></button>
+                                        <button class="topic-item" data-target="topic-logistics">Logistics &amp; Travel Docs<span>Flights, transfers, visas, and documentation.</span></button>
+                                        <button class="topic-item" data-target="topic-adventure">Adventure Specific<span>Trekking, wildlife experiences, and special activities.</span></button>
+                                        <button class="topic-item" data-target="topic-sustainability">Sustainability &amp; Ethics<span>Responsible travel, community, and conservation.</span></button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="faq-panel">
+                                        <div id="topic-destination" class="topic-content active">
+                                            <h4>By Destination</h4>
+                                            <details class="faq-item"><summary>Which destinations are best for wildlife viewing?</summary><p>East Africa’s top wildlife destinations include the Maasai Mara, Serengeti, Ngorongoro Crater, and Amboseli. Each offers unique viewing opportunities depending on the season.</p></details>
+                                            <details class="faq-item"><summary>When is the best time to visit each destination?</summary><p>Dry season generally offers the best game viewing. For example, July–October is excellent for the Maasai Mara migration, while June–September is best for northern Tanzania.</p></details>
+                                        </div>
+                                        <div id="topic-before" class="topic-content">
+                                            <h4>Before You Travel</h4>
+                                            <details class="faq-item"><summary>What documents do I need before departure?</summary><p>Most visitors need a passport valid for at least six months, a return ticket, and the required visa. Some destinations also require proof of vaccinations.</p></details>
+                                            <details class="faq-item"><summary>How should I prepare my packing list?</summary><p>Pack layers, neutral clothing, sun protection, and comfortable footwear. Don’t forget adapters, medications, and any specialized gear for adventure activities.</p></details>
+                                        </div>
+                                        <div id="topic-during" class="topic-content">
+                                            <h4>During Your Trip</h4>
+                                            <details class="faq-item"><summary>What should I expect on a typical safari day?</summary><p>Safari days usually start early with a morning game drive, followed by a break at lunch, and an afternoon or evening activity. Lodges provide meals and rest between drives.</p></details>
+                                            <details class="faq-item"><summary>How do I stay safe while on safari?</summary><p>Follow your guide’s instructions, keep a safe distance from wildlife, and stay inside the vehicle unless told otherwise. Always respect local regulations and park rules.</p></details>
+                                        </div>
+                                        <div id="topic-after" class="topic-content">
+                                            <h4>After Your Trip</h4>
+                                            <details class="faq-item"><summary>Can I request photos or trip notes after I return?</summary><p>Yes, many operators provide trip summaries, photo packages, and travel notes after your safari. Contact us if you want a post-trip album or itinerary recap.</p></details>
+                                            <details class="faq-item"><summary>How do I share feedback or leave a review?</summary><p>Feedback is welcome through our email or review platforms. We appreciate comments on guides, accommodations, and overall experience.</p></details>
+                                        </div>
+                                        <div id="topic-health" class="topic-content">
+                                            <h4>Health &amp; Safety</h4>
+                                            <details class="faq-item"><summary>What health precautions should I take?</summary><p>Check vaccination requirements for your destination and bring any regular medications. Mosquito protection and hydration are key during safari travel.</p></details>
+                                            <details class="faq-item"><summary>Is it safe to travel during the rainy season?</summary><p>Rainy season can still offer great travel experiences, with fewer crowds and lush scenery. However, some roads may be more challenging and certain areas may be less accessible.</p></details>
+                                        </div>
+                                        <div id="topic-logistics" class="topic-content">
+                                            <h4>Logistics &amp; Travel Docs</h4>
+                                            <details class="faq-item"><summary>What visa options are available?</summary><p>Visas depend on your nationality and destination. Many countries offer eVisas or visa-on-arrival, but it’s best to confirm requirements before you travel.</p></details>
+                                            <details class="faq-item"><summary>How can I manage flight and transfer schedules?</summary><p>We’ll coordinate your flights and ground transfers to match your itinerary. Arrivals and departures are planned to minimize travel stress and maximize your time on safari.</p></details>
+                                        </div>
+                                        <div id="topic-adventure" class="topic-content">
+                                            <h4>Adventure Specific</h4>
+                                            <details class="faq-item"><summary>Can I add trekking or special activities to my itinerary?</summary><p>Yes, many safaris can include mountain trekking, guided walks, and cultural experiences. We can tailor your trip based on activity level and interest.</p></details>
+                                            <details class="faq-item"><summary>What should I know about adventure-grade accommodation?</summary><p>Adventure lodges often offer more rustic comfort, close connection to nature, and intimate settings. Expect quality service with an emphasis on authenticity.</p></details>
+                                        </div>
+                                        <div id="topic-sustainability" class="topic-content">
+                                            <h4>Sustainability &amp; Ethics</h4>
+                                            <details class="faq-item"><summary>How do you support local communities?</summary><p>We work with local guides, lodges, and community programs to ensure travel benefits the people and wildlife in the destination.</p></details>
+                                            <details class="faq-item"><summary>What practices are used to reduce environmental impact?</summary><p>We promote responsible waste management, conservation fees, and lodges that use solar power, water-saving measures, and eco-friendly practices.</p></details>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="blog-details-subtitle">Download Your Travel Guide</h3>
+                        <ul class="blog-details-feature-list">
+                            <li><a href="contact.html">Safari Adventure in Tanzania</a></li>
+                            <li><a href="contact.html">Safari Adventure in Kenya</a></li>
+                            <li><a href="contact.html">Climbing Adventure Mt.Kenya</a></li>
+                            <li><a href="contact.html">Climbing Gear List – Rentable Essentials</a></li>
+                            <li><a href="contact.html">Sustainability with Rasset Adventures</a></li>
+                            <li><a href="contact.html">Practical Tips for your safari journey</a></li>
+                        </ul>
+
+                        <blockquote>
+                            <h4>Travel support that helps you prepare for every stage of your journey.</h4>
+                            <div class="quote-icon">
+                                <svg width="32" height="30" viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.35 0.237864C8.25703 0.344114 6.50391 2.54216 4.45195 5.12536C1.49688 8.8574 0.726562 9.87341 0.726562 10.0195C0.726562 10.1789 0.826172 10.2918 1.3043 10.6902C1.62969 10.9492 2.30703 11.5933 2.81836 12.1047C4.89023 14.1965 6.10547 16.2418 6.53047 18.3336C6.66992 18.9976 6.66992 20.3058 6.53047 21.116C6.11875 23.5465 4.50508 26.4617 2.24063 28.8789C1.86211 29.2773 1.72266 29.4765 1.72266 29.6027C1.72266 30.0344 2.02813 30.041 3.01094 29.6293C5.8 28.4539 8.60234 26.5879 10.6543 24.5293C13.3105 21.873 14.8645 18.9644 15.5086 15.4648C15.6945 14.4754 15.6813 12.5961 15.482 11.6265C14.7184 7.85466 12.6 3.97654 9.55859 0.769114C8.80156 -0.0277615 8.65547 -0.0875263 8.35 0.237864Z"/>
+                                    <path d="M23.9555 0.237936C23.8625 0.344187 22.1094 2.54223 20.0574 5.12543C17.1023 8.85747 16.332 9.87348 16.332 10.0196C16.332 10.1789 16.4316 10.2918 16.9164 10.6903C17.2352 10.9493 17.9125 11.5934 18.4238 12.1047C20.4957 14.1965 21.7109 16.2418 22.1359 18.3336C22.2754 18.9977 22.2754 20.3059 22.1359 21.1161C22.0098 21.8399 21.6711 22.9555 21.3125 23.7789C20.6152 25.386 19.2074 27.4446 17.7598 28.9719C17.4543 29.2973 17.3281 29.4832 17.3281 29.6094C17.3281 30.0344 17.6336 30.0411 18.6164 29.6293C22.0629 28.1817 25.5293 25.645 27.6344 23.0352C29.1617 21.1426 30.3238 18.8383 30.8684 16.627C31.1672 15.4184 31.2336 14.8672 31.2336 13.5723C31.2336 12.45 31.2203 12.2176 31.0543 11.4739C30.2508 7.71528 28.1723 3.93676 25.1641 0.769186C24.407 -0.027689 24.2609 -0.0874538 23.9555 0.237936Z"/>
+                                </svg>
+                            </div>
+                        </blockquote>
+
+                        <div class="blog-details-author mt-5">
+                            <div class="author-image">
+                                <img src="assets/images/blog/rasset-icon-4.png" class="img-fluid" alt="Rasset Adventures Team">
+                            </div>
+                            <div class="author-content">
+                                <h5>Rasset Adventures Team</h5>
+                                <p>We are passionate about making your safari easy, inspiring and deeply connected to East Africa’s people and wildlife. Our travel experts blend local knowledge with personal service on every trip.</p>
+                            </div>
+                        </div>
+
+                        <div class="mt-5 contact-block text-center" id="contact">
+                            <h2>CAN'T FIND YOUR ANSWER? WE'RE HERE TO HELP</h2>
+                            <p class="mb-4">SEND US YOUR TRIP QUESTIONS, REQUEST A QUOTE, OR ASK ABOUT AVAILABILITY FOR YOUR SAFARI.</p>
+                            <p class="contact-details"><strong>Email:</strong> <a href="mailto:rassetadventures@gmail.com">rassetadventures@gmail.com</a> &nbsp; | &nbsp; <strong>Phone:</strong> +254 714 098 121</p>
+                            <a href="contact.html" class="btn btn-primary">Contact us now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const topicButtons = document.querySelectorAll('.topic-item');
+            const topicContents = document.querySelectorAll('.topic-content');
+
+            topicButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    topicButtons.forEach(btn => btn.classList.remove('active'));
+                    topicContents.forEach(content => content.classList.remove('active'));
+
+                    button.classList.add('active');
+                    const target = button.getAttribute('data-target');
+                    const panel = document.getElementById(target);
+                    if (panel) {
+                        panel.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+
+    <footer class="text-center py-4">
+        <div class="container">
+            <p style="margin-bottom: 8px;">Rasset Adventures and Travel</p>
+            <p style="margin:0; font-size:14px;">© 2026 Rasset Adventures. All rights reserved.</p>
+            <div style="margin-top:8px;">
+                <a href="privacy.html" style="margin-right:12px; color:#fff; text-decoration:underline; font-size:1rem; font-weight:600;">Privacy Policy</a>
+                <a href="terms.html" style="color:#fff; text-decoration:underline; font-size:1rem; font-weight:600;">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js file link -->
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="assets/js/odometer.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
