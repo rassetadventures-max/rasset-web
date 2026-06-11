@@ -35,7 +35,7 @@
   // mobile-menu
 
   $('.mobile-menu-btn').on("click",function(){
-    $('.main-nav').addClass('show-menu');
+    $('.main-nav').toggleClass('show-menu');
   });
 
   $('.menu-close-btn').on("click",function(){
