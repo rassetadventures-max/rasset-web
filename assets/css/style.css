@@ -3866,6 +3866,22 @@ header.style-5 .main-nav .mobile-menu-logo {
     padding-bottom:8px
 }
 
+header.style-5 .main-nav .mobile-logo-area {
+    padding:0px 20px;
+    margin-bottom:15px
+}
+
+header.style-5 .main-nav .mobile-logo-wrap {
+    max-width:100px;
+    height:auto
+}
+
+header.style-5 .main-nav .mobile-logo-wrap img {
+    max-width:100%;
+    height:auto;
+    display:block
+}
+
 header.style-5 .main-nav ul {
     float:none;
     text-align:left;
