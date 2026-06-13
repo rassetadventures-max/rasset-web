@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 
@@ -236,7 +236,7 @@
                                     </li>
                                 </ul>
                                 <h3 class="tour-details-subtitle">Overview</h3>
-                                <p>Mount Kenya trekking offers an unforgettable high-altitude adventure on Africa's second-highest peak (5,199m / 17,057ft), a UNESCO World Heritage Site. Several routes cater to different skill levels, with the Sirimon Route (easiest, scenic) and Chogoria Route (most beautiful) being most popular, while the Naro Moru Route is steeper and faster. Treks typically take 4–7 days, with the summit attempt on Point Lenana (4,985m) being non-technical and achievable for fit hikers without mountaineering experience. Best climbed during dry seasons (January–February and August–September), Mount Kenya offers stunning alpine scenery, unique equatorial glaciers, and far fewer crowds than Kilimanjaro.</p>
+                                <p>Mount Kenya trekking offers an unforgettable high-altitude adventure on Africa's second-highest peak (5,199m / 17,057ft), a UNESCO World Heritage Site. Several routes cater to different skill levels, with the Sirimon Route (easiest, scenic) and Chogoria Route (most beautiful) being most popular, while the Naro Moru Route is steeper and faster. Treks typically take 4â€“7 days, with the summit attempt on Point Lenana (4,985m) being non-technical and achievable for fit hikers without mountaineering experience. Best climbed during dry seasons (Januaryâ€“February and Augustâ€“September), Mount Kenya offers stunning alpine scenery, unique equatorial glaciers, and far fewer crowds than Kilimanjaro.</p>
                                 
                                 <h3 class="tour-details-subtitle mt-4">Safari Highlights</h3>
                                 <ul class="plan-list mt-3 mb-4">
@@ -376,7 +376,7 @@
                                 <div class="map-area">
                                     <iframe src="https://maps.google.com/maps?q=Mount%20Kenya&t=&z=10&ie=UTF8&iwloc=&output=embed" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
-                                <p>Mount Kenya is located in central Kenya, approximately 150 km (93 miles) north of Nairobi, the capital city. The mountain straddles Meru, Kirinyaga, and Nyeri counties, with the main trekking access towns being Nanyuki (northwest), Chogoria (east), and Naro Moru (west). The Mount Kenya National Park surrounds the peak, with three main trekking approach roads leading to different route starting points: Sirimon Gate (northwest), Naro Moru Gate (west), and Chogoria Gate (east). The entire mountain is easily reachable by road (3–4 hours from Nairobi) or by charter flight to small airstrips near Nanyuki.</p>
+                                <p>Mount Kenya is located in central Kenya, approximately 150 km (93 miles) north of Nairobi, the capital city. The mountain straddles Meru, Kirinyaga, and Nyeri counties, with the main trekking access towns being Nanyuki (northwest), Chogoria (east), and Naro Moru (west). The Mount Kenya National Park surrounds the peak, with three main trekking approach roads leading to different route starting points: Sirimon Gate (northwest), Naro Moru Gate (west), and Chogoria Gate (east). The entire mountain is easily reachable by road (3â€“4 hours from Nairobi) or by charter flight to small airstrips near Nanyuki.</p>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="v-pills-gallery" role="tabpanel" aria-labelledby="v-pills-gallery-tab">
@@ -739,13 +739,16 @@
                     <div class="booking-form-box">
                         <h3>Book the Tour</h3>
                         <p>Arrange your trip in advance - book this tour now!</p>
-                        <form class="banner-form">
+                        <form class="banner-form" action="https://formspree.io/f/mojzwwoo" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                                <input type="hidden" name="_subject" value="New tour booking">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_replyto" value="">
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-icon">
                                     <i class="bi bi-pencil-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Full Name*">
+                                    <input type="text" name="name" placeholder="Full Name*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
@@ -753,7 +756,7 @@
                                     <i class="bi bi-envelope-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="E-mail*">
+                                    <input type="text" name="email" placeholder="E-mail*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
@@ -761,7 +764,7 @@
                                     <i class="bi bi-telephone"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Phone Number*">
+                                    <input type="text" name="phone" placeholder="Phone Number*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box postition-relative">
@@ -777,7 +780,7 @@
                                     <i class="bi bi-person-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="number" placeholder="People *">
+                                    <input type="number" name="people" placeholder="People *">
                                 </div>
                             </div>
                             <div class="search-box-single">
@@ -785,7 +788,7 @@
                                     <i class="bi bi-tags-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="number" placeholder="Number of travellers adults*">
+                                    <input type="number" name="travellers_adults" placeholder="Number of travellers adults*">
                                 </div>
                             </div>
                             <div class="search-box-single">
@@ -793,7 +796,7 @@
                                     <i class="bi bi-tags-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="number" placeholder="Number of travellers children*">
+                                    <input type="number" name="travellers_children" placeholder="Number of travellers children*">
                                 </div>
                             </div>
                             <div class="search-box-single">
@@ -801,7 +804,7 @@
                                     <i class="bi bi-chat-left-text-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <textarea name="message3" rows="6" placeholder="Your Enquiry*"></textarea>
+                                    <textarea name="message" rows="6" placeholder="Your Enquiry*"></textarea>
                                 </div>
                             </div>
                             <button class="eg-btn btn--primary btn--lg w-100 mt-3">BOOK NOW</button>
@@ -1039,6 +1042,7 @@
 
 <!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/tour-package-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:34:07 GMT -->
 </html>
+
 
 
 

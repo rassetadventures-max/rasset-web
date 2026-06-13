@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -147,7 +147,7 @@
                         </div>
 
                         <h3 class="tour-details-subtitle">The "Big Five" & Unique Wildlife</h3>
-                        <p>Ol Pejeta is home to all members of the "Big Five"—lion, leopard, elephant, buffalo, and rhino. Beyond these icons, the conservancy boasts high densities of predators like cheetahs and rare African wild dogs. You can also spot specialized northern species like the Grevy’s zebra and Jackson’s hartebeest.</p>
+                        <p>Ol Pejeta is home to all members of the "Big Five"â€”lion, leopard, elephant, buffalo, and rhino. Beyond these icons, the conservancy boasts high densities of predators like cheetahs and rare African wild dogs. You can also spot specialized northern species like the Grevyâ€™s zebra and Jacksonâ€™s hartebeest.</p>
                         <p>Every visit to Ol Pejeta directly supports wildlife tourism and local community programs, ensuring that your safari makes a real difference in both conservation and the lives of those who protect this incredible land.</p>
 
                         <div class="faq-area">
@@ -199,20 +199,23 @@
                     <div class="booking-form-box">
                         <h3>Book This Experience</h3>
                         <p>Support conservation in the heart of Kenya.</p>
-                        <form class="banner-form">
+                        <form class="banner-form" action="https://formspree.io/f/mojzwwoo" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                                <input type="hidden" name="_subject" value="New tour booking">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_replyto" value="">
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Full Name*">
+                                    <input type="text" name="name" placeholder="Full Name*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="E-mail*">
+                                    <input type="text" name="email" placeholder="E-mail*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Phone Number*">
+                                    <input type="text" name="phone" placeholder="Phone Number*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box postition-relative">
@@ -349,3 +352,4 @@
 </body>
 
 </html>
+

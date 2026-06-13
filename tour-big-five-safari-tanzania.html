@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 
@@ -231,7 +231,7 @@
                                         Group & Private Options
                                     </li>
                                     <li>
-                                        <i class="bi bi-geo-alt"></i> Kilimanjaro – Lake Manyara – Serengeti – Ngorongoro – Tarangire
+                                        <i class="bi bi-geo-alt"></i> Kilimanjaro â€“ Lake Manyara â€“ Serengeti â€“ Ngorongoro â€“ Tarangire
                                     </li>
                                 </ul>
                                 <h3 class="tour-details-subtitle">Overview</h3>
@@ -464,7 +464,7 @@
 <div class="tab-pane fade" id="v-pills-review" role="tabpanel" aria-labelledby="v-pills-review-tab">
                             <div class="tour-review-area">
                                 <h3 class="tour-details-subtitle">Rasset Adventures Client Review</h3>
-                                <p>Booking this safari was the best decision we made for our Tanzania trip. From the moment we landed in Arusha, everything was flawlessly organized. Our guide, Emmanuel, was a legend–he spotted a leopard in a tree from a mile away and got us front-row seats to a lion pride feasting on a fresh wildebeest. We saw elephants, Cape buffalo, and even a rare black rhino in the Ngorongoro Crater. The tented camp was surprisingly comfortable with amazing food, and waking up to zebras grazing outside felt like a dream. Worth every penny. Don't hesitate–just book it.</p>
+                                <p>Booking this safari was the best decision we made for our Tanzania trip. From the moment we landed in Arusha, everything was flawlessly organized. Our guide, Emmanuel, was a legendâ€“he spotted a leopard in a tree from a mile away and got us front-row seats to a lion pride feasting on a fresh wildebeest. We saw elephants, Cape buffalo, and even a rare black rhino in the Ngorongoro Crater. The tented camp was surprisingly comfortable with amazing food, and waking up to zebras grazing outside felt like a dream. Worth every penny. Don't hesitateâ€“just book it.</p>
                                 
                                 <!-- review-progress-box -->
                                 <div class="review-progress-box">
@@ -741,13 +741,16 @@
                     <div class="booking-form-box">
                         <h3>Book the Tour</h3>
                         <p>Arrange your trip in advance - book this tour now!</p>
-                        <form class="banner-form">
+                        <form class="banner-form" action="https://formspree.io/f/mojzwwoo" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                                <input type="hidden" name="_subject" value="New tour booking">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_replyto" value="">
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-icon">
                                     <i class="bi bi-pencil-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Full Name*">
+                                    <input type="text" name="name" placeholder="Full Name*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
@@ -755,7 +758,7 @@
                                     <i class="bi bi-envelope-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="E-mail*">
+                                    <input type="text" name="email" placeholder="E-mail*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
@@ -763,7 +766,7 @@
                                     <i class="bi bi-telephone"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Phone Number*">
+                                    <input type="text" name="phone" placeholder="Phone Number*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box postition-relative">
@@ -779,7 +782,7 @@
                                     <i class="bi bi-person-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="number" placeholder="People *">
+                                    <input type="number" name="people" placeholder="People *" required>
                                 </div>
                             </div>
                             <div class="search-box-single">
@@ -803,7 +806,7 @@
                                     <i class="bi bi-chat-left-text-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <textarea name="message3" rows="6" placeholder="Your Enquiry*"></textarea>
+                                    <textarea name="message" rows="6" placeholder="Your Enquiry*"></textarea>
                                 </div>
                             </div>
                             <button class="eg-btn btn--primary btn--lg w-100 mt-3">BOOK NOW</button>
@@ -1071,6 +1074,9 @@
 
 <!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/tour-package-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:34:07 GMT -->
 </html>
+
+
+
 
 
 

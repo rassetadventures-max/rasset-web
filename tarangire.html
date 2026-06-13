@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -125,7 +125,7 @@
                 <div class="col-lg-8">
                     <div class="destination-details-content">
                         <h3 class="tour-details-subtitle">EXPLORE THE LAND OF GIANTS</h3>
-                        <p>Tarangire National Park is one of Tanzania’s hidden safari treasures, renowned for its vast elephant herds, ancient baobab trees, and unspoiled wilderness. Located in northern Tanzania, the park offers an authentic and peaceful safari experience away from the larger crowds, making it a favorite destination for nature lovers and photographers.</p>
+                        <p>Tarangire National Park is one of Tanzaniaâ€™s hidden safari treasures, renowned for its vast elephant herds, ancient baobab trees, and unspoiled wilderness. Located in northern Tanzania, the park offers an authentic and peaceful safari experience away from the larger crowds, making it a favorite destination for nature lovers and photographers.</p>
                         
                         <div class="details-highlights">
                             <h4 class="tour-details-subtitle">KEY HIGHLIGHTS: THE TARANGIRE EXPERIENCE</h4>
@@ -175,7 +175,7 @@
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                           <div class="accordion-body">
-                                            <p>Tarangire National Park covers approximately 2,850 square kilometers (1,100 square miles), making it one of Tanzania’s largest national parks.</p>
+                                            <p>Tarangire National Park covers approximately 2,850 square kilometers (1,100 square miles), making it one of Tanzaniaâ€™s largest national parks.</p>
                                         </div>
                                         </div>
                                     </div>
@@ -187,7 +187,7 @@
                                         </h2>
                                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                           <div class="accordion-body">
-                                            <p> Tarangire is famous for its large elephant herds, majestic baobab trees, rich birdlife, and seasonal wildlife migrations that rival some of Africa’s most celebrated safari destinations.</p>
+                                            <p> Tarangire is famous for its large elephant herds, majestic baobab trees, rich birdlife, and seasonal wildlife migrations that rival some of Africaâ€™s most celebrated safari destinations.</p>
                                         </div>
                                         </div>
                                     </div>
@@ -200,20 +200,23 @@
                     <div class="booking-form-box">
                         <h3>Book This Experience</h3>
                         <p>Join the circle of life on the endless plains.</p>
-                        <form class="banner-form">
+                        <form class="banner-form" action="https://formspree.io/f/mojzwwoo" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                                <input type="hidden" name="_subject" value="New tour booking">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_replyto" value="">
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Full Name*">
+                                    <input type="text" name="name" placeholder="Full Name*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="E-mail*">
+                                    <input type="text" name="email" placeholder="E-mail*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Phone Number*">
+                                    <input type="text" name="phone" placeholder="Phone Number*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box postition-relative">
@@ -350,3 +353,6 @@
 </body>
 
 </html>
+
+
+

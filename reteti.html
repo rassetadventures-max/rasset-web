@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -147,7 +147,7 @@
                         </div>
 
                         <h3 class="tour-details-subtitle">CULTURE WILDERNESS & SUSTAINABILITY</h3>
-                        <p> Surrounded by the dramatic landscapes of northern Kenya, Reteti offers more than wildlife viewing — it provides insight into Samburu traditions, conservation education, and the importance of protecting Africa’s endangered wildlife.</p>
+                        <p> Surrounded by the dramatic landscapes of northern Kenya, Reteti offers more than wildlife viewing â€” it provides insight into Samburu traditions, conservation education, and the importance of protecting Africaâ€™s endangered wildlife.</p>
                         <p>The sanctuary also plays a vital role in rescuing other species, including giraffes, and supports wider conservation initiatives throughout the region.</p>
                         <p>Whether you are watching playful elephant calves interact, learning about rescue operations, or experiencing Samburu hospitality, Reteti delivers a meaningful and unforgettable journey into conservation and community empowerment.</p>
 
@@ -187,7 +187,7 @@
                                         </h2>
                                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                           <div class="accordion-body">
-                                            <p> Reteti is unique because it is Africa’s first community-owned elephant sanctuary, where conservation is led directly by local indigenous communities dedicated to protecting wildlife and preserving natural heritage.</p>
+                                            <p> Reteti is unique because it is Africaâ€™s first community-owned elephant sanctuary, where conservation is led directly by local indigenous communities dedicated to protecting wildlife and preserving natural heritage.</p>
                                         </div>
                                         </div>
                                     </div>
@@ -200,20 +200,23 @@
                     <div class="booking-form-box">
                         <h3>Book This Experience</h3>
                         <p>Join the circle of life on the endless plains.</p>
-                        <form class="banner-form">
+                        <form class="banner-form" action="https://formspree.io/f/mojzwwoo" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                                <input type="hidden" name="_subject" value="New tour booking">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_replyto" value="">
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Full Name*">
+                                    <input type="text" name="name" placeholder="Full Name*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="E-mail*">
+                                    <input type="text" name="email" placeholder="E-mail*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Phone Number*">
+                                    <input type="text" name="phone" placeholder="Phone Number*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box postition-relative">
@@ -348,3 +351,6 @@
 </body>
 
 </html>
+
+
+

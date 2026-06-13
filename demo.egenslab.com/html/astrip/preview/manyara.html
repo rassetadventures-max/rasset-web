@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -125,13 +125,13 @@
                 <div class="col-lg-8">
                     <div class="destination-details-content">
                         <h3 class="tour-details-subtitle">DISCOVER TANZANIA'S SCENIC SAFARI GEM </h3>
-                        <p> Lake Manyara National Park is one of Tanzania’s most picturesque wildlife destinations, celebrated for its diverse ecosystems, tree-climbing lions, and breathtaking views of the Great Rift Valley. Nestled between the dramatic escarpment and the sparkling alkaline lake, the park offers a unique safari experience rich in wildlife, birdlife, and natural beauty.</p>
+                        <p> Lake Manyara National Park is one of Tanzaniaâ€™s most picturesque wildlife destinations, celebrated for its diverse ecosystems, tree-climbing lions, and breathtaking views of the Great Rift Valley. Nestled between the dramatic escarpment and the sparkling alkaline lake, the park offers a unique safari experience rich in wildlife, birdlife, and natural beauty.</p>
                         
                         <div class="details-highlights">
                             <h4 class="tour-details-subtitle">KEY HIGHLIGHTS: THE LAKE MANYARA EXPERIENCE</h4>
                             <p>Despite its relatively compact size, Lake Manyara National Park boasts an incredible variety of landscapes ranging from lush groundwater forests and open grasslands to acacia woodlands and the shallow soda lake itself.</p>
                             <ul>
-                                <li><strong>Famous Tree-Climbing Lions:</strong> Lake Manyara is one of the few places in Africa where lions are known to climb trees, often resting on large branches during the heat of the day — a rare and fascinating sight for visitors.</li>
+                                <li><strong>Famous Tree-Climbing Lions:</strong> Lake Manyara is one of the few places in Africa where lions are known to climb trees, often resting on large branches during the heat of the day â€” a rare and fascinating sight for visitors.</li>
                                 <li><strong>Spectacular Birdlife:</strong>  The lake attracts thousands of flamingos and over 400 species of birds, making the park a paradise for birdwatchers and nature enthusiasts.</li>
                                 <li><strong>Diverse Wildlife Encounters:</strong> The park is home to elephants, giraffes, buffaloes, zebras, wildebeests, hippos, baboons, and many other species that thrive within its varied habitats.</li>
                             </ul>
@@ -148,7 +148,7 @@
 
                         <h3 class="tour-details-subtitle">UNMATCHED LANDSCAPES & BIODIVERSITY</h3>
                         <p>Lake Manyara National Park offers a stunning blend of scenery and wildlife within a compact area. The lush forest near the entrance is filled with playful blue monkeys and baboons, while the open plains and lakeshore provide excellent opportunities for game viewing and photography.</p>
-                        <p>The park’s groundwater forest, fed by underground springs from the Rift Valley escarpment, creates a refreshing contrast to the dry savannah landscapes commonly associated with East African safaris.</p>
+                        <p>The parkâ€™s groundwater forest, fed by underground springs from the Rift Valley escarpment, creates a refreshing contrast to the dry savannah landscapes commonly associated with East African safaris.</p>
                         <p>Whether you are watching elephants move through the forest, spotting flamingos along the lake shores, or searching for the famous tree-climbing lions, Lake Manyara promises an intimate and unforgettable safari experience.</p>
 
                         <div class="faq-area">
@@ -200,20 +200,23 @@
                     <div class="booking-form-box">
                         <h3>Book This Experience</h3>
                         <p>Join the circle of life on the endless plains.</p>
-                        <form class="banner-form">
+                        <form class="banner-form" action="https://formspree.io/f/mojzwwoo" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                                <input type="hidden" name="_subject" value="New tour booking">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_replyto" value="">
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Full Name*">
+                                    <input type="text" name="name" placeholder="Full Name*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="E-mail*">
+                                    <input type="text" name="email" placeholder="E-mail*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Phone Number*">
+                                    <input type="text" name="phone" placeholder="Phone Number*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box postition-relative">
@@ -350,3 +353,4 @@
 </body>
 
 </html>
+

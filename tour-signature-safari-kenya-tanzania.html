@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 
@@ -231,7 +231,7 @@
                                         Group & Private Options
                                     </li>
                                     <li>
-                                        <i class="bi bi-geo-alt"></i> Nairobi – Maasai Mara – Lake Manyara – Serengeti – Ngorongoro – Tarangire
+                                        <i class="bi bi-geo-alt"></i> Nairobi â€“ Maasai Mara â€“ Lake Manyara â€“ Serengeti â€“ Ngorongoro â€“ Tarangire
                                     </li>
                                 </ul>
                                 <h3 class="tour-details-subtitle">Overview</h3>
@@ -490,8 +490,8 @@
                                 <div class="map-area">
                                     <iframe src="https://maps.google.com/maps?q=East%20Africa&t=&z=6&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
-                                <p>Signature safaris in Kenya center on the Masai Mara in the southwest, while Tanzania’s prime locations are the Serengeti and Ngorongoro Crater in the north, all sharing the Serengeti-Mara ecosystem. These are easily connected via flights from Nairobi (Kenya) or Arusha/Kilimanjaro (Tanzania), with the Kenya-Tanzania border crossing near the Mara/Serengeti allowing combined itineraries.</p>
-                                <p>A typical 8- to 12-day Kenya-Tanzania safari combines 2–3 days in the Masai Mara, 3–4 days in the Serengeti, and 2–3 days in the Ngorongoro Crater, often with a stop at Lake Manyara or Tarangire, using fly-in or road-transfer itineraries. Many travelers start in Nairobi (Kenya), spend time in the Mara, then fly or drive to the border area for Tanzania’s northern circuit, or vice versa, depending on migration timing, flight ease, and lodge availability.</p>
+                                <p>Signature safaris in Kenya center on the Masai Mara in the southwest, while Tanzaniaâ€™s prime locations are the Serengeti and Ngorongoro Crater in the north, all sharing the Serengeti-Mara ecosystem. These are easily connected via flights from Nairobi (Kenya) or Arusha/Kilimanjaro (Tanzania), with the Kenya-Tanzania border crossing near the Mara/Serengeti allowing combined itineraries.</p>
+                                <p>A typical 8- to 12-day Kenya-Tanzania safari combines 2â€“3 days in the Masai Mara, 3â€“4 days in the Serengeti, and 2â€“3 days in the Ngorongoro Crater, often with a stop at Lake Manyara or Tarangire, using fly-in or road-transfer itineraries. Many travelers start in Nairobi (Kenya), spend time in the Mara, then fly or drive to the border area for Tanzaniaâ€™s northern circuit, or vice versa, depending on migration timing, flight ease, and lodge availability.</p>
                             </div>
                         </div>
                                                 <div class="tab-pane fade" id="v-pills-gallery" role="tabpanel" aria-labelledby="v-pills-gallery-tab">
@@ -818,13 +818,16 @@
                     <div class="booking-form-box">
                         <h3>Book the Tour</h3>
                         <p>Arrange your trip in advance - book this tour now!</p>
-                        <form class="banner-form">
+                        <form class="banner-form" action="https://formspree.io/f/mojzwwoo" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                                <input type="hidden" name="_subject" value="New tour booking">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_replyto" value="">
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-icon">
                                     <i class="bi bi-pencil-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Full Name*">
+                                    <input type="text" name="name" placeholder="Full Name*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
@@ -832,7 +835,7 @@
                                     <i class="bi bi-envelope-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="E-mail*">
+                                    <input type="text" name="email" placeholder="E-mail*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
@@ -840,7 +843,7 @@
                                     <i class="bi bi-telephone"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Phone Number*">
+                                    <input type="text" name="phone" placeholder="Phone Number*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box postition-relative">
@@ -856,7 +859,7 @@
                                     <i class="bi bi-person-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <input type="number" placeholder="People *">
+                                    <input type="number" name="people" placeholder="People *" required>
                                 </div>
                             </div>
                             <div class="search-box-single">
@@ -880,7 +883,7 @@
                                     <i class="bi bi-chat-left-text-fill"></i>
                                 </div>
                                 <div class="searchbox-input">
-                                    <textarea name="message3" rows="6" placeholder="Your Enquiry*"></textarea>
+                                    <textarea name="message" rows="6" placeholder="Your Enquiry*"></textarea>
                                 </div>
                             </div>
                             <button class="eg-btn btn--primary btn--lg w-100 mt-3">BOOK NOW</button>
@@ -1118,6 +1121,9 @@
 
 <!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/tour-package-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:34:07 GMT -->
 </html>
+
+
+
 
 
 

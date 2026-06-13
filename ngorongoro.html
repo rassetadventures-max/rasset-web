@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -125,7 +125,7 @@
                 <div class="col-lg-8">
                     <div class="destination-details-content">
                         <h3 class="tour-details-subtitle">DISCOVER AFRICA'S NATURAL WONDER</h3>
-                        <p>Ngorongoro Crater, often referred to as the “Eighth Wonder of the World,” is one of Africa’s most extraordinary safari destinations. Located in northern Tanzania, this UNESCO World Heritage Site is the world’s largest intact volcanic caldera and offers one of the most remarkable wildlife viewing experiences on Earth.</p>
+                        <p>Ngorongoro Crater, often referred to as the â€œEighth Wonder of the World,â€ is one of Africaâ€™s most extraordinary safari destinations. Located in northern Tanzania, this UNESCO World Heritage Site is the worldâ€™s largest intact volcanic caldera and offers one of the most remarkable wildlife viewing experiences on Earth.</p>
                         
                         <div class="details-highlights">
                             <h4 class="tour-details-subtitle">KEY HIGHLIGHTS: THE NGORONGORO CRATER EXPERIENCE</h4>
@@ -148,7 +148,7 @@
 
                         <h3 class="tour-details-subtitle">UNMATCHED BIODIVERSITY & NATURAL BEAUTY</h3>
                         <p>The Ngorongoro Conservation Area supports a diverse ecosystem where wildlife and the Maasai people coexist harmoniously. Visitors can enjoy year-round game viewing thanks to the permanent water sources and fertile grazing grounds found within the crater floor.</p>
-                        <p>Whether you are witnessing elephants roaming through Lerai Forest, lions resting in the open plains, or flamingos gathering around Lake Magadi, every moment in Ngorongoro Crater offers a deep connection to Africa’s untouched wilderness.</p>
+                        <p>Whether you are witnessing elephants roaming through Lerai Forest, lions resting in the open plains, or flamingos gathering around Lake Magadi, every moment in Ngorongoro Crater offers a deep connection to Africaâ€™s untouched wilderness.</p>
 
                         <div class="faq-area">
                             <h3 class="tour-details-subtitle">Traveler Essential Facts</h3>
@@ -174,7 +174,7 @@
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                           <div class="accordion-body">
-                                            <p>The crater spans approximately 260 square kilometers (100 square miles) and is about 600 meters deep, making it the world’s largest unbroken volcanic caldera.</p>
+                                            <p>The crater spans approximately 260 square kilometers (100 square miles) and is about 600 meters deep, making it the worldâ€™s largest unbroken volcanic caldera.</p>
                                         </div>
                                         </div>
                                     </div>
@@ -186,7 +186,7 @@
                                         </h2>
                                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                           <div class="accordion-body">
-                                            <p>Ngorongoro is unique because it forms a natural enclosure that supports one of the densest populations of wildlife in Africa. Its combination of dramatic scenery, rich biodiversity, and cultural heritage makes it one of the continent’s most iconic safari destinations.</p>
+                                            <p>Ngorongoro is unique because it forms a natural enclosure that supports one of the densest populations of wildlife in Africa. Its combination of dramatic scenery, rich biodiversity, and cultural heritage makes it one of the continentâ€™s most iconic safari destinations.</p>
                                         </div>
                                         </div>
                                     </div>
@@ -199,20 +199,23 @@
                     <div class="booking-form-box">
                         <h3>Book This Experience</h3>
                         <p>Join the circle of life on the endless plains.</p>
-                        <form class="banner-form">
+                        <form class="banner-form" action="https://formspree.io/f/mojzwwoo" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                                <input type="hidden" name="_subject" value="New tour booking">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_replyto" value="">
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Full Name*">
+                                    <input type="text" name="name" placeholder="Full Name*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="E-mail*">
+                                    <input type="text" name="email" placeholder="E-mail*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-input">
-                                    <input type="text" placeholder="Phone Number*">
+                                    <input type="text" name="phone" placeholder="Phone Number*" required>
                                 </div>
                             </div>
                             <div class="search-box-single destination-box postition-relative">
@@ -349,3 +352,6 @@
 </body>
 
 </html>
+
+
+
