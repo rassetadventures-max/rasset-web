@@ -179,6 +179,8 @@
     },
     autoplay: true,
     loop: true,
+    preventClicks: false,
+    preventClicksPropagation: false,
     // roundLengths: true,
     pagination: {
       el: ".swiper-pagination-number",
