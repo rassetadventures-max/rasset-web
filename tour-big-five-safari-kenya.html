@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 
@@ -651,7 +651,7 @@
                                 <div class="review-form-area">
                                     <h3 class="tour-details-subtitle">Write a review:</h3>
                                     <div class="contact-from-wrapper">
-                                        <form action="thank-you.html" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                                        <form action="https://formspree.io/f/mojzwwoo" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
                                             <input type="hidden" name="_subject" value="New booking: Big Five Safari Kenya">
                                             <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_next" value="" id="tourNext">
@@ -1086,12 +1086,12 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-        // Set the full redirect URL for Formspree
+        // Set the full redirect URL for Formspree on all forms
         document.addEventListener('DOMContentLoaded', function() {
-            const nextInput = document.getElementById('tourNext');
-            if (nextInput) {
-                nextInput.value = window.location.href.split('/').slice(0, -1).join('/') + '/thank-you.html';
-            }
+            const redirectUrl = window.location.href.split('/').slice(0, -1).join('/') + '/thank-you.html';
+            document.querySelectorAll('input[name="_next"]').forEach(input => {
+                input.value = redirectUrl;
+            });
         });
     </script>
 
@@ -1101,6 +1101,9 @@
 
 <!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/tour-package-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:34:07 GMT -->
 </html>
+
+
+
 
 
 
