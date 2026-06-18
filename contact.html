@@ -50,6 +50,49 @@
 
     <!-- Flatpickr date picker css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <!-- Floating WhatsApp Button Styles -->
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #20BA5A;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 20px rgba(37, 211, 102, 0.4);
+            animation: none;
+        }
+
+        @keyframes pulse-whatsapp {
+            0% {
+                box-shadow: 0px 0px 0px rgba(37, 211, 102, 0.7);
+            }
+            50% {
+                box-shadow: 0px 0px 20px rgba(37, 211, 102, 0.4);
+            }
+            100% {
+                box-shadow: 0px 0px 0px rgba(37, 211, 102, 0.7);
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -243,6 +286,7 @@
                         <form action="https://formspree.io/f/mojzwwoo" method="POST">
                             <input type="hidden" name="_subject" value="New contact/reservation from website">
                             <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://rassetadventures-max.github.io/rasset-web/thank-you.html">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-inner">
@@ -588,6 +632,11 @@
         integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254714098121" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp">
+        <i class='bx bxl-whatsapp'></i>
+    </a>
 </body>
 
 
