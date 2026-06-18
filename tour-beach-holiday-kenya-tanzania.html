@@ -637,6 +637,7 @@
                                         <form action="thank-you.html" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
                                             <input type="hidden" name="_subject" value="New booking: Beach Holiday Kenya Tanzania">
                                             <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="" id="tourNext">
                                             <input type="hidden" name="tour" value="Beach Holiday Kenya Tanzania">
                                             <div class="row">
                                                 <div class="col-lg-6">
@@ -737,9 +738,10 @@
                     <div class="booking-form-box">
                         <h3>Book the Tour</h3>
                         <p>Arrange your trip in advance - book this tour now!</p>
-                        <form class="banner-form" action="thank-you.html" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                        <form class="banner-form" id="tourBookingForm" action="https://formspree.io/f/mojzwwoo" method="POST" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
                                 <input type="hidden" name="_subject" value="New tour booking">
                                 <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="" id="tourNext">
                                 <input type="hidden" name="_replyto" value="">
                             <div class="search-box-single destination-box">
                                 <div class="searchbox-icon">
@@ -1065,12 +1067,28 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/main.js"></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+
+    <script>
+        // Set the full redirect URL for Formspree
+        document.addEventListener('DOMContentLoaded', function() {
+            const nextInput = document.getElementById('tourNext');
+            if (nextInput) {
+                nextInput.value = window.location.href.split('/').slice(0, -1).join('/') + '/thank-you.html';
+            }
+        });
+    </script>
+
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 
 
 <!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/tour-package-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:34:07 GMT -->
 </html>
+
+
+
+
+
 
 
 

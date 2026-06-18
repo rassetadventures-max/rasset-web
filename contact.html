@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 
@@ -217,7 +217,7 @@
                 <div class="col-lg-7 col-md-10 col-sm-12">
                     <div class="info-title-area">
                         <h3>Rasset Adventures Tour Operators</h3>
-                        <p>Let our experienced team help you craft a personalized journey filled with unforgettable memories across East Africa. Your dream African adventure begins with a simple conversation, and we’re here to guide you every step of the way.</p>
+                        <p>Let our experienced team help you craft a personalized journey filled with unforgettable memories across East Africa. Your dream African adventure begins with a simple conversation, and weâ€™re here to guide you every step of the way.</p>
                     </div>
                 </div>
             </div>
@@ -283,10 +283,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="contact-from-wrapper">
-                        <form action="https://formspree.io/f/mojzwwoo" method="POST">
+                        <form action="https://formspree.io/f/mojzwwoo" method="POST" id="contactForm">
                             <input type="hidden" name="_subject" value="New contact/reservation from website">
                             <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://rassetadventures-max.github.io/rasset-web/thank-you.html">
+                            <input type="hidden" name="_next" value="" id="contactNext">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-inner">
@@ -633,6 +633,16 @@
         data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
 
+    <script>
+        // Set the full redirect URL for Formspree
+        document.addEventListener('DOMContentLoaded', function() {
+            const nextInput = document.getElementById('contactNext');
+            if (nextInput) {
+                nextInput.value = window.location.origin + '/thank-you.html';
+            }
+        });
+    </script>
+
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/254714098121" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp">
         <i class='bx bxl-whatsapp'></i>
@@ -643,6 +653,8 @@
 <!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:34:10 GMT -->
 
 </html>
+
+
 
 
 

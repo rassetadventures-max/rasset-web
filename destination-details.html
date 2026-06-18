@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 
@@ -223,7 +223,7 @@
                         <div class="desti-details-block">
                             <h3>Maasai Mara Wildlife Experience</h3>
                             <p>One of Africa's greatest wildlife reserves, the Maasai Mara National Reserve is famous for its exceptional populations of lions, leopards, cheetahs and elephants. It is the destination that offers a vivid image of the true African savannah as seen in documentaries and postcards.</p>
-                            <p>This world-renowned destination is famous for the Great Migration, where over two million wildebeest, zebras, and gazelles traverse the plains in search of greener pastures. It’s a spectacle of nature that is unmatched anywhere else on earth.</p>
+                            <p>This world-renowned destination is famous for the Great Migration, where over two million wildebeest, zebras, and gazelles traverse the plains in search of greener pastures. Itâ€™s a spectacle of nature that is unmatched anywhere else on earth.</p>
                             <div class="desti-details-img">
                                 <img src="assets/images/bg/mara-2.jpg" class="img-fluid" alt="image">
                             </div>
@@ -266,26 +266,29 @@
                         <div class="desti-details-block">
                             <h3>Ask About This Destination :</h3>
                             <div class="contact-from-wrapper">
-                                <form>
+                                <form action="https://formspree.io/f/mojzwwoo" method="POST" id="destinationForm">
+                                    <input type="hidden" name="_subject" value="Destination Inquiry">
+                                    <input type="hidden" name="_captcha" value="false">
+                                    <input type="hidden" name="_next" value="" id="destinationNext">
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="form-inner">
-                                                <input type="text" placeholder="Your Name:">
+                                                <input type="text" name="name" placeholder="Your Name:" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-inner">
-                                                <input type="text" placeholder="Your Phone Number:">
+                                                <input type="text" name="phone" placeholder="Your Phone Number:" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="form-inner">
-                                                <input type="text" placeholder="Type Your Subject:">
+                                                <input type="text" name="subject" placeholder="Type Your Subject:" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="form-inner">
-                                                <textarea name="message" rows="5" placeholder="Write Your Question"></textarea>
+                                                <textarea name="message" rows="5" placeholder="Write Your Question" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
@@ -353,7 +356,7 @@
                             <ul class="tour-category-list">
                                 <li><a href="#">Adventure (03)</a></li>
                                 <li><a href="#">Travel Vacation (04)</a></li>
-                                <li><a href="#">Popular Tour’s (08)</a></li>
+                                <li><a href="#">Popular Tourâ€™s (08)</a></li>
                                 <li><a href="#">Couple Tour (05)</a></li>
                                 <li><a href="#">Family Adventure (07)</a></li>
                             </ul>
@@ -600,6 +603,16 @@
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/main.js"></script>
 
+    <script>
+        // Set the full redirect URL for Formspree
+        document.addEventListener('DOMContentLoaded', function() {
+            const nextInput = document.getElementById('destinationNext');
+            if (nextInput) {
+                nextInput.value = window.location.href.split('/').slice(0, -1).join('/') + '/thank-you.html';
+            }
+        });
+    </script>
+
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 
     <!-- Floating WhatsApp Button -->
@@ -611,5 +624,7 @@
 
 <!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/destination-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:33:58 GMT -->
 </html>
+
+
 
 
