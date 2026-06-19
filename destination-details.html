@@ -266,29 +266,31 @@
                         <div class="desti-details-block">
                             <h3>Ask About This Destination :</h3>
                             <div class="contact-from-wrapper">
-                                <form action="https://formspree.io/f/mojzwwoo" method="POST" id="destinationForm">
-                                    <input type="hidden" name="_subject" value="Destination Inquiry">
-                                    <input type="hidden" name="_captcha" value="false">
-                                    <input type="hidden" name="_next" value="" id="destinationNext">
+                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfsKsFIxzaf79IF04rlCaxK896OHTvaD6djom1kN6dqRfqzrA/formResponse" method="POST" id="destinationForm">
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="form-inner">
-                                                <input type="text" name="name" placeholder="Your Name:" required>
+                                                <input type="text" name="entry.2005620554" placeholder="Your Name:" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-inner">
-                                                <input type="text" name="phone" placeholder="Your Phone Number:" required>
+                                                <input type="email" name="entry.1045781291" placeholder="Your Email:" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="form-inner">
-                                                <input type="text" name="subject" placeholder="Type Your Subject:" required>
+                                                <input type="text" name="entry.1166974658" placeholder="Your Phone Number:" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
                                             <div class="form-inner">
-                                                <textarea name="message" rows="5" placeholder="Write Your Question" required></textarea>
+                                                <input type="text" name="entry.839337160" placeholder="Type Your Subject:" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-inner">
+                                                <textarea name="entry.839337160" rows="5" placeholder="Write Your Question" required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
@@ -604,12 +606,33 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-        // Set the full redirect URL for Formspree
+        // Handle Google Forms submission with redirect to thank-you.html
         document.addEventListener('DOMContentLoaded', function() {
-            const nextInput = document.getElementById('destinationNext');
-            if (nextInput) {
-                nextInput.value = window.location.href.split('/').slice(0, -1).join('/') + '/thank-you.html';
-            }
+            const forms = document.querySelectorAll('form[action*="docs.google.com/forms"]');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Create FormData from the form
+                    const formData = new FormData(form);
+                    
+                    // Submit to Google Forms (without page reload)
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        mode: 'no-cors'
+                    }).then(() => {
+                        // Redirect to thank-you page after submission
+                        const redirectUrl = window.location.href.split('/').slice(0, -1).join('/') + '/thank-you.html';
+                        window.location.href = redirectUrl;
+                    }).catch(error => {
+                        console.error('Form submission error:', error);
+                        // Still redirect even if there's an error
+                        const redirectUrl = window.location.href.split('/').slice(0, -1).join('/') + '/thank-you.html';
+                        window.location.href = redirectUrl;
+                    });
+                });
+            });
         });
     </script>
 
