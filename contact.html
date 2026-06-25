@@ -283,58 +283,60 @@
             <div class="row">
                 <div class="col-12">
                     <div class="contact-from-wrapper">
-                        <form action="https://docs.google.com/forms/d/e/1FAIpQLSfsKsFIxzaf79IF04rlCaxK896OHTvaD6djom1kN6dqRfqzrA/formResponse" method="POST" id="contactForm">
+                        <form action="https://formspree.io/f/mojzwwoo" method="POST" id="contactForm" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
+                            <input type="hidden" name="_replyto" value="">
+                            <input type="hidden" name="_subject" value="Website contact">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-inner">
-                                        <input type="text" name="entry.2005620554" placeholder="Your Name:" required>
+                                        <input type="text" name="name" placeholder="Your Name:" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-inner">
-                                        <input type="tel" id="phone" name="entry.1166974658" placeholder="Phone Number" required>
+                                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-inner">
-                                        <input type="email" name="entry.1045781291" placeholder="Email Address:" required>
+                                        <input type="email" name="email" placeholder="Email Address:" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-inner">
-                                        <input type="text" id="country_display" name="entry.1065046570" placeholder="Country" readonly style="background-color: #f5f5f5; cursor: not-allowed;">
+                                        <input type="text" id="country_display" name="country" placeholder="Country" readonly style="background-color: #f5f5f5; cursor: not-allowed;">
                                         <input type="hidden" id="country_code" name="country_code">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-inner">
-                                        <input type="text" name="entry.2010578161" placeholder="Tour Name:" required>
+                                        <input type="text" name="tour" placeholder="Tour Name:" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-inner">
-                                        <input type="number" name="entry.1440884333" placeholder="Number of Adults:" min="1" required>
+                                        <input type="number" name="adults" placeholder="Number of Adults:" min="1" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-inner">
-                                        <input type="number" name="entry.479853956" placeholder="Number of Children:" min="0" required>
+                                        <input type="number" name="children" placeholder="Number of Children:" min="0" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-inner">
                                         <label for="tour_date" style="display: block; font-size: 17px; color: #666; margin-bottom: 5px; font-weight: 500;">Tour Starting Date (dd/mm/yyyy):</label>
-                                        <input type="text" id="tour_date" name="entry.1773159107" placeholder="Select Date" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 14px; color: #333;">
+                                        <input type="text" id="tour_date" name="date" placeholder="Select Date" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 14px; color: #333;">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-inner">
-                                        <input type="text" name="entry.839337160" placeholder="Type Your Subject:" required>
+                                        <input type="text" name="subject" placeholder="Type Your Subject:" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-inner">
-                                        <textarea name="entry.839337160" rows="5" placeholder="Type Your Message..."></textarea>
+                                        <textarea name="message" rows="5" placeholder="Type Your Message..."></textarea>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
@@ -630,37 +632,6 @@
         data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
 
-    <script>
-        // Handle Google Forms submission with redirect to thank-you.html
-        document.addEventListener('DOMContentLoaded', function() {
-            const forms = document.querySelectorAll('form[action*="docs.google.com/forms"]');
-            forms.forEach(form => {
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Create FormData from the form
-                    const formData = new FormData(form);
-                    
-                    // Submit to Google Forms (without page reload)
-                    fetch(form.action, {
-                        method: 'POST',
-                        body: formData,
-                        mode: 'no-cors'
-                    }).then(() => {
-                        // Redirect to thank-you page after submission
-                        const redirectUrl = window.location.origin + '/thank-you.html';
-                        window.location.href = redirectUrl;
-                    }).catch(error => {
-                        console.error('Form submission error:', error);
-                        // Still redirect even if there's an error
-                        const redirectUrl = window.location.origin + '/thank-you.html';
-                        window.location.href = redirectUrl;
-                    });
-                });
-            });
-        });
-    </script>
-
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/254714098121" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp">
         <i class='bx bxl-whatsapp'></i>
@@ -671,6 +642,7 @@
 <!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:34:10 GMT -->
 
 </html>
+
 
 
 

@@ -266,7 +266,7 @@
                         <div class="desti-details-block">
                             <h3>Ask About This Destination :</h3>
                             <div class="contact-from-wrapper">
-                                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfsKsFIxzaf79IF04rlCaxK896OHTvaD6djom1kN6dqRfqzrA/formResponse" method="POST" id="destinationForm">
+                                <form action="https://formspree.io/f/mojzwwoo" method="POST" id="destinationForm">
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <div class="form-inner">
@@ -605,38 +605,7 @@
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <script>
-        // Handle Google Forms submission with redirect to thank-you.html
-        document.addEventListener('DOMContentLoaded', function() {
-            const forms = document.querySelectorAll('form[action*="docs.google.com/forms"]');
-            forms.forEach(form => {
-                form.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Create FormData from the form
-                    const formData = new FormData(form);
-                    
-                    // Submit to Google Forms (without page reload)
-                    fetch(form.action, {
-                        method: 'POST',
-                        body: formData,
-                        mode: 'no-cors'
-                    }).then(() => {
-                        // Redirect to thank-you page after submission
-                        const redirectUrl = window.location.href.split('/').slice(0, -1).join('/') + '/thank-you.html';
-                        window.location.href = redirectUrl;
-                    }).catch(error => {
-                        console.error('Form submission error:', error);
-                        // Still redirect even if there's an error
-                        const redirectUrl = window.location.href.split('/').slice(0, -1).join('/') + '/thank-you.html';
-                        window.location.href = redirectUrl;
-                    });
-                });
-            });
-        });
-    </script>
-
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 
     <!-- Floating WhatsApp Button -->
     <a href="https://wa.me/254714098121" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp">
@@ -647,6 +616,8 @@
 
 <!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/destination-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:33:58 GMT -->
 </html>
+
+
 
 
 
