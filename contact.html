@@ -7,7 +7,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rasset Adventures - Tour Booking and Travel Agency HTML Template</title>
+    <title>Contact Rasset Adventures | Kenya & Tanzania Safari Bookings</title>
+    <meta name='description' content='Contact Rasset Adventures to book Kenya and Tanzania safari tours, beach holidays, gorilla trekking, and custom wildlife travel packages.' />
     
     <link rel="icon" href="assets/images/icons/rasset-logo.jpg" type="image/gif" sizes="20x20">
 
@@ -50,49 +51,6 @@
 
     <!-- Flatpickr date picker css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-
-    <!-- Floating WhatsApp Button Styles -->
-    <style>
-        .whatsapp-float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 30px;
-            right: 30px;
-            background-color: #25D366;
-            color: #FFF;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            animation: pulse-whatsapp 2s infinite;
-        }
-
-        .whatsapp-float:hover {
-            background-color: #20BA5A;
-            transform: scale(1.1);
-            box-shadow: 0px 0px 20px rgba(37, 211, 102, 0.4);
-            animation: none;
-        }
-
-        @keyframes pulse-whatsapp {
-            0% {
-                box-shadow: 0px 0px 0px rgba(37, 211, 102, 0.7);
-            }
-            50% {
-                box-shadow: 0px 0px 20px rgba(37, 211, 102, 0.4);
-            }
-            100% {
-                box-shadow: 0px 0px 0px rgba(37, 211, 102, 0.7);
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -217,7 +175,7 @@
                 <div class="col-lg-7 col-md-10 col-sm-12">
                     <div class="info-title-area">
                         <h3>Rasset Adventures Tour Operators</h3>
-                        <p>Let our experienced team help you craft a personalized journey filled with unforgettable memories across East Africa. Your dream African adventure begins with a simple conversation, and weâ€™re here to guide you every step of the way.</p>
+                        <p>Let our experienced team help you craft a personalized journey filled with unforgettable memories across East Africa. Your dream African adventure begins with a simple conversation, and we’re here to guide you every step of the way.</p>
                     </div>
                 </div>
             </div>
@@ -283,9 +241,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="contact-from-wrapper">
-                        <form action="https://formspree.io/f/mojzwwoo" method="POST" id="contactForm" onsubmit="this.querySelector('input[name=_replyto]').value=this.querySelector('input[name=email]').value">
-                            <input type="hidden" name="_replyto" value="">
-                            <input type="hidden" name="_subject" value="Website contact">
+                        <form action="https://formspree.io/f/mojzwwoo" method="POST">
+                            <input type="hidden" name="_subject" value="New contact/reservation from website">
+                            <input type="hidden" name="_captcha" value="false">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-inner">
@@ -310,23 +268,23 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-inner">
-                                        <input type="text" name="tour" placeholder="Tour Name:" required>
+                                        <input type="text" name="tour_name" placeholder="Tour Name:" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-inner">
-                                        <input type="number" name="adults" placeholder="Number of Adults:" min="1" required>
+                                        <input type="number" name="num_adults" placeholder="Number of Adults:" min="1" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-inner">
-                                        <input type="number" name="children" placeholder="Number of Children:" min="0" required>
+                                        <input type="number" name="num_children" placeholder="Number of Children:" min="0" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
                                     <div class="form-inner">
                                         <label for="tour_date" style="display: block; font-size: 17px; color: #666; margin-bottom: 5px; font-weight: 500;">Tour Starting Date (dd/mm/yyyy):</label>
-                                        <input type="text" id="tour_date" name="date" placeholder="Select Date" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 14px; color: #333;">
+                                        <input type="text" id="tour_date" name="tour_date" placeholder="Select Date" required style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; font-family: inherit; font-size: 14px; color: #333;">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
@@ -566,6 +524,7 @@
     <!-- =============== Footer-section end =============== -->
 
     <!-- js file link -->
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/jquery-ui.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
@@ -625,24 +584,16 @@
             }
         });
     </script>
-    <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
         integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
         data-cf-beacon='{"version":"2024.11.0","token":"70834e4b23964a2eaf7cf4ec0e5e9a84","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/254714098121" class="whatsapp-float" target="_blank" title="Contact us on WhatsApp">
-        <i class='bx bxl-whatsapp'></i>
-    </a>
 </body>
 
 
 <!-- Mirrored from demo.egenslab.com/html/rasset adventures/preview/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Apr 2026 09:34:10 GMT -->
 
 </html>
-
-
 
 
 
